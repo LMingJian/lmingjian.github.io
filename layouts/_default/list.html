@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8" style="min-height: 723px;">
+    <article>
+        <h1 class="text-center">{{ .Title }}</h1>
+        {{ with .Content -}}<div class="text-center">{{ . }}</div>{{ end -}}
+        {{ $paginator := .Paginate (.Data.Pages) -}}
+        {{ range $paginator.Pages -}}
+        <div class="card-list">
+          <div class="card">
+            <!--{{- .Scratch.Set "fillImage" "1270x620 Center" -}}
+            {{ partial "content/card-image.html" . }}-->
+            <div class="card-body">
+                <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
+                <p>{{ .Params.excerpt | safeHTML }}</p>
+                {{ partial "main/blog-meta.html" . -}}
+            </div>
+          </div>
+        </div>
+        {{ end -}}
+    </article>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    {{ $.Scratch.Set "paginator" true }}
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+{{ end }}
