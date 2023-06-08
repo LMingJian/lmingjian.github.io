@@ -1,16 +1,18 @@
 ---
-title: "简单使用"
+title: "Allure 的使用"
 date: 2021-01-05
 author: LMingJian
 ---
 
 ## 1.简介
 
-Allure 是一个轻量级、灵活的、支持多语言、支持多平台的测试报告工具，其可以提供详尽的测试报告、测试步骤、log、数据统计报告。需要注意的是，Allure 是一个应用工具，并不是程序中的一个模块，需要从 [github@allure2](https://github.com/allure-framework/allure2/releases) 下载，并单独安装。
+Allure 是一个轻量级、灵活的、支持多语言、支持多平台的测试报告工具，其可以提供详尽的测试报告、测试步骤、log、数据统计报告。
+
+Allure 是一个应用工具，并不是程序中的一个模块，需要单独进行下载安装。
 
 在编写 Pytest 代码时，需要使用`pip install allure-pytest`安装对应的模块，来生成支持 Allure 调用的数据报告。这些数据报告会交由 Allure 来进行统计展示。
 
-文档：[ Allure Framework ](https://docs.qameta.io/allure-report/)
+文档：[ Allure Framework ](https://docs.qameta.io/allure-report/)，下载：[ allure2@github ](https://github.com/allure-framework/allure2/releases) 
 
 ## 2.命令行使用
 
@@ -73,7 +75,7 @@ source：文件路径，相当于传一个文件
 @allure.severity('级别')
 ```
 
-## 7.Pytest 使用：用例的描述
+## 6.Pytest 使用：用例的描述
 
 ```python
 # 注释即为描述

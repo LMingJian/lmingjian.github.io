@@ -4,9 +4,11 @@ date: 2020-09-22
 author: LMingJian
 ---
 
-## 1.Adb 的简单使用
+## 1.Adb 的使用
 
-Adb 是随 Android SDK 一同安装的工具，通常存放于 `SDK\Android\platform-tools` 内。
+Adb （Android 调试桥）是一种功能多样的命令行工具，可让您与设备进行通信。此外，Adb 命令还可用于执行各种设备操作。
+
+Adb 通常会随 Android SDK 一同安装，常见于 `SDK\Android\platform-tools` 内。下面是一些常用的 Adb 命令。
 
 ```shell
 # 环境 Huawei TRT-AL00A
@@ -27,13 +29,13 @@ adb shell dumpsys meminfo PACKAGE_NAME
 adb shell dumpsys package PACKAGE_NAME
 ```
 
-## 2.Adb 模拟点击
+## 2.使用 Adb 模拟屏幕点击
 
-### 1.获取屏幕的事件 event 的宽高
+### 1.获取屏幕事件（ event） 的宽高
 
 ```shell
 adb shell 
-# 进入shell模式
+# 进入 shell 模式
 >>> HWTRT-Q:/ $ getevent -p
 # 获取所有输入事件信息，找到宽（0035）和高（0036）这两个属性，这代表 event 中的宽高
 >>> 0035  : value 0, min 0, max 719, fuzz 0, flat 0, resolution 0
@@ -54,7 +56,7 @@ rateH = 1280(手机屏幕的高) / 1279(event里0036的max) = 0.99
 ### 3.获取点击坐标
 
 ```shell
-# 在shell模式下输入
+# 在 shell 模式下输入
 >>> getevent /dev/input/event4
 # 监控点击输入，关注 0035 与 0036 两个属性，然后换算到屏幕坐标
 >>> 0003 0035 00000264
@@ -74,4 +76,4 @@ rateH = 1280(手机屏幕的高) / 1279(event里0036的max) = 0.99
 # 点击(612,535)这个位置
 ```
 
-> 参考文档：[ adb @Android Studio用户指南 ](https://developer.android.google.cn/studio/command-line/adb)
+> 参考文档：[ adb @Android Studio用户指南 ](https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn)

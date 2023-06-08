@@ -21,6 +21,6 @@ contributors: ["LMingJian"]
 
 如果想要使用这个主题，可以直接到官网 [Doks](https://getdoks.org/) 这里查看，也可以使用我修改后的这个主题。
 
-我修改后的这个主题可以到 [my-hugo-theme-doks @gitee ](https://gitee.com/LMingJian/my-hugo-theme-doks) 或 [LMingJian @github](https://github.com/LMingJian/LMingJian) 这里进行查看，如何使用也分别写在对应的 README 文件和 BUILDREADME 文件里了。
+我修改后的这个主题可以到 [ my-hugo-theme-doks @gitee ](https://gitee.com/LMingJian/my-hugo-theme-doks) 或 [ LMingJian @github ](https://github.com/LMingJian/lmingjian.github.io) 这里进行查看，注意事项和使用帮助也分别写在对应的 README 文件和 BUILDREADME 文件里。
 
 最后，”温故而知新“，永远也不过时😁。

@@ -72,25 +72,11 @@ Source:
         "href", "title", "description"
       ],
       index: ["title", "description", "content"]
-    }
+    },
+    encode: str => str.split("")
   });
 
-
   // Not yet supported: https://github.com/nextapps-de/flexsearch#complex-documents
-
-  /*
-  var docs = [
-    {{ range $index, $page := (where .Site.Pages "Section" "docs") -}}
-      {
-        id: {{ $index }},
-        href: "{{ .Permalink }}",
-        title: {{ .Title | jsonify }},
-        description: {{ .Params.description | jsonify }},
-        content: {{ .Content | jsonify }}
-      },
-    {{ end -}}
-  ];
-  */
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
@@ -167,7 +153,7 @@ Source:
         a.appendChild(title);
 
         const description = document.createElement('span');
-        description.textContent = doc.description;
+        description.textContent = doc.description.split('\n')[0].split('#')[1];
         description.classList.add("suggestion__description");
         a.appendChild(description);
 
