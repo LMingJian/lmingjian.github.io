@@ -76,4 +76,6 @@ rateH = 1280(手机屏幕的高) / 1279(event里0036的max) = 0.99
 # 点击(612,535)这个位置
 ```
 
-> 参考文档：[ adb @Android Studio用户指南 ](https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn)
+{{< details "参考文件" >}} 
+1：[ adb @Android Studio用户指南 ](https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn)
+{{< /details >}}

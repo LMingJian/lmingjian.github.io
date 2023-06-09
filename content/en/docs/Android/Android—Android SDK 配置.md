@@ -32,4 +32,6 @@ sdkmanager --list [options] \
            [--channel=channel_id] // Channels: 0 (stable), 1 (beta), 2 (dev), or 3 (canary)
 ```
 
-> 参考文档：[ sdkmanager @Android Studio 用户指南 ](https://developer.android.google.cn/studio/command-line/sdkmanager?hl=zh-cn)
+{{< details "参考文件" >}} 
+1：[ sdkmanager @Android Studio 用户指南 ](https://developer.android.google.cn/studio/command-line/sdkmanager?hl=zh-cn)
+{{< /details >}}

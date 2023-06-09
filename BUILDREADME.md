@@ -57,6 +57,20 @@ footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">N
 copyRight = "Copyright (c) 2020-2023 Henk Verlinde and Article author"
 ```
 
+在`.\config\_default\config.toml`中，修改以下内容可以变更网站链接。
+
+```toml
+baseurl = "https://doks.netlify.app/"
+canonifyURLs = false
+disableAliases = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+paginate = 7
+rssLimit = 10
+```
+
 ### 4.修改主页内容
 
 在`.\layouts\index.html`中，可以对网站主页根据需求进行修改。如下面所示内容，其中`{{ .Title }}{{ .Params.description }}`等内容会自动从 Markdown 文件`.\content\en\_index.md`的元数据中获取。
@@ -78,7 +92,7 @@ copyRight = "Copyright (c) 2020-2023 Henk Verlinde and Article author"
 {{ end }}
 ```
 
- Markdown 文件元数据中对应内容通过`{{ ... }}`在网站上获取展示。
+Markdown 文件元数据中对应内容通过`{{ ... }}`在网站上获取展示。
 
 ```markdown
 ---
@@ -109,7 +123,7 @@ lead: "＜（＾－＾）＞"
 在`.\content\en`文件夹中默认有着`docs, blog, link`三个文件夹，分别对应不同的界面，对应的界面模板文件位于`.\layouts`中。三界面分别展示如下的文档结构内容。
 
 ```tree
-docs: /docs 展示一级目录的名称路径，/docs/help 展示该目录下包含文章名称路径
+docs: /docs 展示一级目录的名称路径，/docs/help 展示该目录下包含文章名称路径，HTML 布局对应 .\layouts\docs 文件夹
   --help
     -_index.md
     -A.md
@@ -119,16 +133,91 @@ docs: /docs 展示一级目录的名称路径，/docs/help 展示该目录下包
     -A.md
   --_index.md
   
-blog: /blog 展示一级目录的名称路径，/blog/welcome 展示文章内容
+blog: /blog 展示一级目录的名称路径，/blog/welcome 展示文章内容，HTML 布局对应 .\layouts\blog 文件夹
   --say-hello
     -_index.md
   --welcome
     -_index.md
   --_index.md
 
-link: /link 展示一级目录的名称路径
+link: /link 展示一级目录的名称路径，HTML 布局对应 .\layouts\link 文件夹
   --hugo
     -_index.md
   --_index.md
 ```
 
+### 7.Github Action 部署
+
+创建文件`.github\workflows\deploy.yml`，并填入以下代码。
+
+```yml
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.108.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass Embedded
+        run: sudo snap install dart-sass-embedded
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build production website
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+```

@@ -11,7 +11,7 @@
         </button>
         <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            {{ range .Pages }}
+            {{ range .Pages.ByTitle }}
               {{ if .IsNode }}
                 {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                 <li class="my-1 ms-3">
@@ -31,14 +31,14 @@
                               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 {{ range .Pages }}
                                   {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                                  <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                  <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 190px">{{ .Title }}</a></li>
                                 {{ end }}
                               </ul>
                             </div>
                           </li>
                         {{ else }}
                           {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                          <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                          <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 190px">{{ .Title }}</a></li>
                         {{ end }}
                       {{ end }}
                     </ul>
@@ -46,7 +46,7 @@
                 </li>
               {{ else }}
                 {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 190px">{{ .Title }}</a></li>
               {{ end }}
             {{ end }}
           </ul>

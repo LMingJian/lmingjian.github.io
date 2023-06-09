@@ -1,3 +1,3 @@
 ---
-title : "Allure"
+title: "Allure"
 ---
