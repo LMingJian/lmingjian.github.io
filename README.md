@@ -1,3 +1,5 @@
 ### Hi there 👋
 
-### This is My blog ╰(*°▽°*)╯: https://lmingjian.github.io
+### This is My blog ╰(*°▽°*)╯
+
+### Visit: https://lmingjian.github.io
