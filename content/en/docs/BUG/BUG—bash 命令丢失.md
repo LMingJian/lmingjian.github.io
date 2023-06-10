@@ -12,7 +12,7 @@ author: LMingJian
 
 由于环境变量 PATH 被错误修改，导致命令丢失。
 
-```shell
+```bash
 # 命令行执行，恢复环境变量
 export PATH=/bin:/usr/bin:$PATH
 ```

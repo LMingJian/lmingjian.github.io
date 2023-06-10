@@ -12,7 +12,7 @@ author: LMingJian
 
 需要修改 Nginx 的 server 配置内容，增加字段：`charset utf-8;`。
 
-```nginx
+```
 server {
     listen   80;
     server_name you.example.com;

@@ -12,7 +12,7 @@ author: LMingJian
 
 修改 `bat` 文件中 `HEAP` 值。`HEAP=-Xms**5g** -Xmx**5g**`，最小与最大运行内存。`MaxMetaspaceSize`，最大堆栈 。
 
-```shell
+```bash
 if not defined HEAP (
     rem See the unix startup file for the rationale of the following parameters,
     rem including some tuning recommendations

@@ -41,7 +41,7 @@ pytest --alluredir=DIR --clean-alluredir
 
 ## 3.Pytest 使用：生成报告
 
-```shell
+```bash
 pytest --alluredir=/tmp/my_allure_results  # 执行测试并生成报告
 ```
 

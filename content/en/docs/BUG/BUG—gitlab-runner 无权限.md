@@ -12,7 +12,7 @@ gitlab-runner 在服务器运行时提示没有权限。
 
 需要手动将 gitlab-runner 服务设置为 root 用户。
 
-```shell
+```bash
 ps aux|grep gitlab-runner  # 查看当前 runner 用户
 
 sudo gitlab-runner uninstall  # 删除 gitlab-runner

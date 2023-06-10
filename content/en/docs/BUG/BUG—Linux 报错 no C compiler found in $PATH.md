@@ -12,7 +12,7 @@ author: LMingJian
 
 Linux 缺少合适的 C 编译器。
 
-```shell
+```bash
 yum install gcc-c++
 ```
 

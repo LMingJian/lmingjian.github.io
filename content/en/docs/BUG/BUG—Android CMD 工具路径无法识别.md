@@ -8,7 +8,7 @@ author: LMingJian
 
 执行 Android cmd 工具 sdkmanager 命令时无法找到对应路径。
 
-```shell
+```bash
 Error: Could not determine SDK root. 
 Error: Either specify it explicitly with --sdk_root= or move this package into its expected location: \cmdline-tools\latest\
 ```

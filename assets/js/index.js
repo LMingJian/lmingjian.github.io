@@ -63,6 +63,20 @@ Source:
 
 (function(){
 
+  var docs_links = document.getElementsByClassName('docs-links')[0];
+
+  docs_links.addEventListener('scroll', function() {
+    sessionStorage.setItem('scrollTop', docs_links.scrollTop);
+  });
+  
+  if(sessionStorage.getItem('scrollTop') != "undefined"){
+    docs_links.scroll(0, sessionStorage.getItem('scrollTop'));
+  }
+
+  if(docs_links.scrollTop === 0){
+    sessionStorage.setItem('scrollTop', 0);
+  }
+
   var index = new FlexSearch.Document({
     tokenize: "forward",
     cache: 100,

@@ -23,7 +23,7 @@ author: LMingJian
 
 `sdkmanager` 是一个命令行工具，用户可以用它来查看、安装、更新和卸载 Android SDK 的软件包，而不用下载 Android Studio。
 
-```cmd
+```bash
 # 卸载软件包
 sdkmanager --uninstall packages [options]
 sdkmanager --uninstall --package_file=package_file [options]

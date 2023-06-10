@@ -14,7 +14,7 @@ Windows 策略禁止运行没有数字签名的脚本，需要修改配置为 re
 
 使用管理员身份开启 PowerShell ，输入以下命令执行。
 
-```shell
+```bash
 Set-ExecutionPolicy RemoteSigned
 ```
 

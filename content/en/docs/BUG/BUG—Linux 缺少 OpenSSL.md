@@ -14,12 +14,12 @@ author: LMingJian
 
 要在 Debian、Ubuntu 或者其他衍生版上安装 OpenSSL：
 
-```shell
+```bash
 sudo apt-get install libssl-dev
 ```
 
 要在 Fedora，CentOS 或者 RHEL 上安装 OpenSSL：
 
-```shell
+```bash
 sudo yum install openssl-devel
 ```
