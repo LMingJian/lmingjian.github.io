@@ -1,5 +1,5 @@
 ---
-title: models
+title: Django 的数据库管理 models
 date: 2021-06-01
 author: LM
 ---

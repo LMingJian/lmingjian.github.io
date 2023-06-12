@@ -1,5 +1,5 @@
 ---
-title: 分页的实现
+title: Django 分页的实现
 date: 2021-07-23
 author: LM
 ---

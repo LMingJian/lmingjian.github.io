@@ -1,5 +1,5 @@
 ---
-title: 文件上传的实现
+title: Django 文件上传的实现
 date: 2022-01-23
 author: LM
 ---

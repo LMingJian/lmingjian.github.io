@@ -1,5 +1,5 @@
 ---
-title: 网页的部署
+title: Django 网页的部署
 date: 2021-08-27
 author: LM
 ---

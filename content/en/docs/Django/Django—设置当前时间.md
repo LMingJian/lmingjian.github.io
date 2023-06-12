@@ -1,5 +1,5 @@
 ---
-title: 在 model 中设置当前时间
+title: Django 在 model 中设置当前时间
 date: 2021-06-03
 author: LM
 ---

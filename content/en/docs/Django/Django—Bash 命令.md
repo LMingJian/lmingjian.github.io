@@ -1,5 +1,5 @@
 ---
-title: 通过 manage.py 管理项目
+title: 通过 manage.py 管理 Django 项目
 date: 2021-06-15
 author: LM
 ---

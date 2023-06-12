@@ -1,5 +1,5 @@
 ---
-title: models 属性 on_delete
+title: Django 数据库模型的 on_delete 属性
 date: 2022-01-24
 author: LM
 ---

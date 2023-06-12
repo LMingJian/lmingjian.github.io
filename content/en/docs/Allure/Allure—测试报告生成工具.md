@@ -1,5 +1,5 @@
 ---
-title: "Allure 的使用"
+title: Allure 的使用
 date: 2021-01-05
 author: LMingJian
 ---

@@ -1,5 +1,5 @@
 ---
-title: 可变参数与命名参数
+title: Dart 的可变参数与命名参数
 date: 2021-07-22
 author: LMingJian
 ---

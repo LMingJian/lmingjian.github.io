@@ -1,5 +1,5 @@
 ---
-title: cookie 的处理
+title: Django 的 cookie 的处理
 date: 2021-06-04
 author: LM
 ---

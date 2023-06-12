@@ -1,5 +1,5 @@
 ---
-title: 在 model 中查询外键
+title: Django 在 model 中查询外键
 date: 2021-07-24
 author: LM
 ---

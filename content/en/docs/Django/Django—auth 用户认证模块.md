@@ -1,5 +1,5 @@
 ---
-title: auth 用户认证模块
+title: Django 的 auth 用户认证模块
 date: 2021-07-26
 author: LM
 ---

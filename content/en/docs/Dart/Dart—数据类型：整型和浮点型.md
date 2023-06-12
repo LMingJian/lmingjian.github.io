@@ -1,5 +1,5 @@
 ---
-title: 数据类型：整型和浮点型
+title: Dart 数据类型：整型和浮点型
 date: 2021-04-24
 author: LMingJian
 ---

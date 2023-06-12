@@ -1,5 +1,5 @@
 ---
-title: 404 界面的设置
+title: Django 的 404 界面的设置
 date: 2021-08-26
 author: LM
 ---

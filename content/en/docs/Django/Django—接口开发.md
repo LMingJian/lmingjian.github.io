@@ -1,5 +1,5 @@
 ---
-title: 接口的实现
+title: Django 接口的实现
 date: 2021-06-05
 author: LM
 ---

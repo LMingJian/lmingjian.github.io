@@ -1,5 +1,5 @@
 ---
-title: setting 文件
+title: Django 的 setting 文件
 date: 2021-07-27
 author: LM
 ---
