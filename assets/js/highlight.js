@@ -9,6 +9,8 @@ import yaml from 'highlight.js/lib/languages/yaml';
 import markdown from 'highlight.js/lib/languages/markdown';
 import python from 'highlight.js/lib/languages/python';
 import dart from 'highlight.js/lib/languages/dart';
+import nginx from 'highlight.js/lib/languages/nginx';
+import sql from 'highlight.js/lib/languages/sql';
 
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('json', json);
@@ -20,6 +22,8 @@ hljs.registerLanguage('yaml', yaml);
 hljs.registerLanguage('md', markdown);
 hljs.registerLanguage('python', python);
 hljs.registerLanguage('dart', dart);
+hljs.registerLanguage('nginx', nginx);
+hljs.registerLanguage('sql', sql);
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('pre code:not(.language-mermaid)').forEach((block) => {
