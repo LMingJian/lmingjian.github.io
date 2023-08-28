@@ -286,3 +286,13 @@ body {
     opacity: 0;
   }
 }
+
+main ul li,
+main ol li,
+main dl li {
+  margin-bottom: 10px;
+}
+
+li ul {
+  margin-top: 10px;
+}
