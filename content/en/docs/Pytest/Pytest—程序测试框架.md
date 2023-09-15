@@ -179,3 +179,17 @@ def return_test_data():
 pytest -v -m webtest
 pytest -v -m 'not webtest'
 ```
+
+## 13.使用：指定某个用例执行
+
+```python
+# 运行指定文件夹目录
+pytest.main(["cases/module1"])
+
+# 运行指定 py 文件
+pytest.main(["cases/module1/test_x1.py"])
+
+# 运行指定 py 文件下的某个测试函数 test_x
+pytest.main(["cases/module1/test_x1.py::test_x"])
+```
+

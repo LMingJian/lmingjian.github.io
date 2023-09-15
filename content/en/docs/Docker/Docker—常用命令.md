@@ -84,6 +84,12 @@ docker tag [镜像id] [新镜像名称]:[新镜像标签]
 docker tag 93109ce1d590 test/python-env:2.7.13
 ```
 
+在错误的为一个镜像添加多个标签时，可以通过 `rm` 命令删除多余镜像的标签
+
+```bash
+docker image rm nginx:1.16.0
+```
+
 ## 5.网络管理
 
 通过`network`对 docker 内部的网络环境进行管理。
@@ -105,5 +111,15 @@ docker cp testtomcat：/usr/local/tomcat/webapps/test/js/test.js /opt  # 从容�
 docker cp /opt/test.js testtomcat：/usr/local/tomcat/webapps/test/js  # 从宿主机拷文件到容器里面
 ```
 
+## 7.容器提交
 
+```bash
+docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
+docker commit -a="mrhelloworld" -m="jdk11 and tomcat9" centos7 mycentos:7
+```
+
+- `-a`：提交的镜像作者；
+- `-c`：使用 Dockerfile 指令来创建镜像；
+- `-m`：提交时的说明文字；
+- `-p`：在 commit 时，将容器暂停。
 

@@ -26,3 +26,14 @@ git gc --aggressive --prune=now
 git push origin --force --all
 ```
 
+## 2.查找大文件
+
+```bash
+git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -5 | awk '{print$1}')"
+# rev-list 命令用来列出Git仓库中的提交，我们用它来列出所有提交中涉及的文件名及其ID。 该命令可以指定只显示某个引用（或分支）的上下游的提交。
+# --objects：列出该提交涉及的所有文件ID。
+# --all：所有分支的提交，相当于指定了位于 /refs 下的所有引用。
+# verify-pack 命令用于显示已打包的内容，我们用它来找到那些大文件。
+# -v（verbose）参数是打印详细信息。
+```
+

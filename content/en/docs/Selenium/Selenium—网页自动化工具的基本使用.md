@@ -14,7 +14,12 @@ pip install Selenium
 
 ## 2.环境
 
-Selenium 的使用是基于浏览器驱动 webdriver 来启动与操作网页的，因此想要正常的进行 Selenium 自动化测试就必须获取对应浏览器的 webdriver 驱动文件。同时在环境变量中配置 Path 的属性，令其指向放置 webdriver 驱动文件的文件夹，或在程序中指定 webdriver 驱动文件的位置。
+Selenium 的使用是基于浏览器驱动 webdriver 来启动与操作网页的，因此想要正常的进行 Selenium 自动化测试就必须获取对应浏览器的 webdriver 驱动文件。可以在环境变量中配置 Path 的属性，令其指向放置 webdriver 驱动文件的文件夹，或在程序中指定 webdriver 驱动文件的位置。
+
+```
+chromedriver.exe --version
+geckodriver.exe --version
+```
 
 ## 3.使用：元素的定位
 
