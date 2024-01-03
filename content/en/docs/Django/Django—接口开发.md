@@ -6,7 +6,7 @@ author: LM
 
 ## 1.Django 接口的实现
 
-在 Django 项目中，一个接口的实现应当遵循如下的步骤。
+在 Django 项目中，请求 request 和响应 response 可以通过 FBV Function base views 形式与 CBV Class base views 形式来编码实现。
 
 ### a.在项目文件下 urls.py 添加接口根路径:
 
@@ -39,7 +39,7 @@ urlpatterns = [
 ]
 ```
 
-### c.在创建接口视图函数 view_api.py 文件，实现具体接口：
+### c.在创建接口视图函数 view_api.py 文件，使用 FBV 形式实现具体接口：
 
 ```python
 from django_web.models import Event, Guest

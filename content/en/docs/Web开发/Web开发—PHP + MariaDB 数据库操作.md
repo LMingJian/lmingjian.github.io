@@ -1,5 +1,5 @@
 ---
-title: 网页开发：使用 PHP 进行数据库操作
+title: 如何使用 PHP 进行数据库操作
 date: 2020-12-04
 author: LM
 ---

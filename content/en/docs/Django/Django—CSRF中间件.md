@@ -48,3 +48,36 @@ fetch(request, {
 });
 ```
 
+## 3.移除所有 CSRF 验证
+
+如果很多接口都不需要 CSRF 验证的话，那么可以将 `settings.py` 文件中 CSRF 中间件注释不使用，在需要的地方利用装饰器 `@csrf_protect` 进行装饰。
+
+```python
+# 注释中间件
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+# 在函数中启用
+@csrf_protect
+def users(request):
+    pass
+```
+
+## 4.对特定函数移除 CSRF 验证
+
+如果大部分接口都需要验证而少部分不需要验证，则可以通过装饰器 `@csrf_exempt` 进行装饰。
+
+```python
+# 在函数中移除
+@csrf_exempt
+def users(request):
+    pass
+```
+

@@ -1,5 +1,5 @@
 ---
-title: 网页开发：使用 jQuery 实现局部刷新
+title: 如何使用 jQuery 实现局部刷新
 date: 2021-07-23
 author: LM
 ---
