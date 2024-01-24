@@ -1,7 +1,8 @@
 ---
-title: Zabbix-Agent 数据收集器的部署
+title: Zabbix Agent 的部署
 date: 2022-01-20
 author: LM
+weight: 3002
 ---
 
 ## 1.部署（环境 CentOS7）

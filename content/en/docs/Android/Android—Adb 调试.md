@@ -13,6 +13,8 @@ Adb 通常会随 Android SDK 一同安装，常见于 `SDK\Android\platform-tool
 ```bash
 # 环境 Huawei TRT-AL00A
 adb devices # 设备
+# 获取日志
+adb logcat 
 adb shell wm size # 长宽
 adb shell getevent -p  # 监听事件
 adb shell # shell

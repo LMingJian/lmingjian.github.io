@@ -11,7 +11,7 @@
         </button>
         <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            {{ range .Pages.ByTitle }}
+            {{ range sort .Pages.ByTitle "Weight" }}
               {{ if .IsNode }}
                 {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                 <li class="my-1 ms-3">
@@ -20,7 +20,7 @@
                   </button>
                   <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      {{ range .Pages }}
+                      {{ range sort .Pages.ByTitle "Weight" }}
                         {{ if .IsNode }}
                           {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                           <li class="my-1 ms-3">
@@ -29,7 +29,7 @@
                             </button>
                             <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
                               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                {{ range .Pages }}
+                                {{ range sort .Pages.ByTitle "Weight" }}
                                   {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                                   <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 190px">{{ .Title }}</a></li>
                                 {{ end }}

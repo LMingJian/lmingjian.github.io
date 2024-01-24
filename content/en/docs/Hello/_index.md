@@ -1,4 +1,4 @@
 ---
-title : "Hello"
-weight: 1
+title : 开始
+weight: 100
 ---

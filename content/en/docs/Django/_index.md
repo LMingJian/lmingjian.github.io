@@ -1,5 +1,5 @@
 ---
 title: Django
-weight: 7
+weight: 1100
 ---
 

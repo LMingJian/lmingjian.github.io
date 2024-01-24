@@ -34,17 +34,17 @@
 #  weight = 15
 
 [[main]]
-  name = "Docs"
+  name = "文档"
   url = "/docs/hello/introduction/"
   weight = 10
 
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
+#[[main]]
+#  name = "Blog"
+#  url = "/blog/"
+#  weight = 20
 
 [[main]]
-  name = "Link"
+  name = "链接"
   url = "/link/"
   weight = 30
 

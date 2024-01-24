@@ -1,12 +1,19 @@
 ---
-title: Zabbix 的 Docker 部署
+title: Zabbix Server 的部署
 date: 2022-01-20
 author: LM
+weight: 3003
 ---
 
-## 1.Zabbix server Docker 部署脚本
+## 1.Zabbix Server
 
-Zabbix 服务器端推荐使用 Docker 部署，以避免环境配置的困难。相应的部署脚本如下。
+Zabbix Server 是 Zabbix 的一个重要组成组件，其是回收和统计可用性，完整性信息的中心组件。
+
+Zabbix Server 包含存储所有配置、统计和操作数据的中央存储库，以及支持从任何地方和任何平台轻松访问的 Web 界面。
+
+## 2.Docker 部署
+
+Zabbix Server 推荐使用 Docker 部署，以避免环境配置的困难，对应的部署脚本如下：
 
 ```bash
 docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
@@ -54,4 +61,3 @@ docker run --name zabbix-web -t \
 docker inspect -f='{{.Name}} {{.NetworkSettings.IPAddress}} {{.HostConfig.PortBindings}}' $(docker ps -aq)
 
 ```
-

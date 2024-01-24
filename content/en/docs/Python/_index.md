@@ -1,5 +1,5 @@
 ---
 title: Python
-weight: 17
+weight: 600
 ---
 
