@@ -19,6 +19,8 @@ pip install pyinstaller
 pyinstaller -F test/Demo.py
 pyinstaller -F -w test/Demo.py
 pyinstaller -F -c test/Demo.py
+# 指定工作台目录，避免出现无法找到运行库的问题
+pyinstaller -p tools -F -c tools/live_compute.py
 ```
 
 PS：当脚本中存在 `print，input` 代码时，必须使用 `-c` 参数携带控制台窗口，否则程序会无法运行。
