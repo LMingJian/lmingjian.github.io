@@ -1,5 +1,5 @@
 ---
-title: 随便记
+title: 随记(→_→)
 weight: 500
 ---
 

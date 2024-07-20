@@ -70,3 +70,23 @@ history -c
 # 参数!$ / !!（上一个命令），执行上一条命令，
 # 参数-c（清理），清理历史记录
 ```
+
+## 8.关机
+
+```bash
+shutdown
+shutdown now
+shutdown 13:20  
+shutdown -p now  ### 关闭机器
+shutdown -H now  ### 停止机器      
+shutdown -r09:35 ### 在 09:35am 重启机器
+```
+
+## 9.重启
+
+```bash
+reboot           ### 重启机器
+reboot --halt    ### 停止机器
+reboot -p        ### 关闭机器
+```
+

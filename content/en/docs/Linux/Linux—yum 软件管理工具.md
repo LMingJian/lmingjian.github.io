@@ -31,3 +31,57 @@ yum -y remove xxxx     #卸载
 yum -y install xxxxx   #安装
 ```
 
+## 3.补充：镜像切换
+
+由于 CentOS 停止维护，Yum 镜像无法使用，因此需要设置镜像源来提高软件包安装和更新的速度。
+
+首先备份你当前的 YUM 仓库配置。
+
+```sh
+sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+```
+
+然后编辑 CentOS-Base.repo 文件，将文件中的 baseurl 和 mirrorlist 行注释掉或者删除，并替换成你想要的镜像地址。
+
+```shell
+sudo vi /etc/yum.repos.d/CentOS-Base.repo
+```
+
+当然，你也可以将以下内容复制并粘贴到你的 CentOS-Base.repo 文件中，来使用阿里云的镜像源。
+
+```
+[base]
+name=CentOS-$releasever - Base - Aliyun
+baseurl=http://mirrors.aliyun.com/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+ 
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates - Aliyun
+baseurl=http://mirrors.aliyun.com/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+ 
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - Aliyun
+baseurl=http://mirrors.aliyun.com/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+ 
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - Aliyun
+baseurl=http://mirrors.aliyun.com/centos/$releasever/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+```
+
+最后保存文件并退出编辑器，清除 YUM 缓存并重新生成缓存，现在你可以使用 YUM 进行软件包的安装和更新了。
+
+```shell
+sudo yum clean all
+sudo yum makecache
+```

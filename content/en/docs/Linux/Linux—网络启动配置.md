@@ -1,5 +1,5 @@
 ---
-title: Linux 网络配置
+title: Linux 网络启动与 SSH 开启
 date: 2021-11-22
 author: LM
 ---

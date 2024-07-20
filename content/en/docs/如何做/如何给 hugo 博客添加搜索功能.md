@@ -4,7 +4,7 @@ date: 2021-09-16
 author: LM
 ---
 
-## 1.利用自带的 index.xml 文件
+## 1.利用 hugo 自带的 index.xml 文件
 
 由于 hugo 生成的 index.xml 文件包含博客所有文章的标题，链接和概要，因此可以利用这个文件来进行内容搜索。JavaScript 实现如下。
 
@@ -39,9 +39,10 @@ author: LM
 
 ## 2.利用 Bing 搜索引擎实现
 
-- Bing 搜索可以收录 GitHub Page ，因此可以在 Bing 中进行搜索（需要注意的是 GitHub Page 禁止了百度爬取，因此 GitHub Page 的内容不能使用百度进行搜索）。
+- Bing 搜索可以收录 GitHub Page ，因此可以在 Bing 中进行搜索。
+- 需要注意的是 GitHub Page 禁止了百度爬取，因此 GitHub Page 的内容不能使用百度进行搜索。
 - 使用`site:(https://your-page-name.github.io)` 可以将搜索范围固定在对应的 GitHub Page 中。
 
 {{< details "参考文件" >}} 
-1：[给Hugo站点添加搜索功能 - Go语言中文网](https://studygolang.com/articles/27141?fr=sidebar)
+1：[ 给 Hugo 站点添加搜索功能 - Go 语言中文网 ](https://studygolang.com/articles/27141?fr=sidebar)
 {{< /details >}}
