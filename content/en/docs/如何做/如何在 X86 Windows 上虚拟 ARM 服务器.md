@@ -44,7 +44,7 @@ qemu-system-aarch64 -m 4000 -cpu cortex-a72 -smp 4,cores=4,threads=1,sockets=1 -
 
 -bios D:\qvm\QEMU_EFI.fd 指定UEFI固件文件
 
--net tap,ifname=tap 启用网络功能（ifname=tap1212中的tap1212请修改为前面步骤中自己修改后的网卡名称）
+-net tap,ifname=tap 启用网络功能（ifname=tap中的tap请修改为前面步骤中自己修改后的网卡名称）
 
 -device nec-usb-xhci -device usb-kbd -device usb-mouse 启用USB鼠标等设备
 
@@ -62,6 +62,12 @@ qemu-system-aarch64 -m 4000 -cpu cortex-a72 -smp 4,cores=4,threads=1,sockets=1 -
 qemu-system-aarch64 -m 4000 -cpu cortex-a72 -smp 4,cores=4,threads=1,sockets=1 -M virt -bios D:\qvm\QEMU_EFI.fd -net nic -net tap,ifname=tap -device nec-usb-xhci -device usb-kbd -device usb-mouse -device VGA -drive if=none,file=,id=cdrom,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom -drive if=none,file=D:\qvm\Kylin-Server-10-SP2-aarch64.img,id=hd0 -device virtio-blk-device,drive=hd0
 ```
 
+## 4.附件
+
+```
+# 在模拟前，可以通过 qemu-system-aarch64 --machine help 来查看系统支持模拟的设备，在命令中通过 -M 指定
+# 请注意，每种模拟的设备都有其所支持的 CPU 类型，可以通过 qemu-system-aarch64 -cpu help 来查看系统支持模拟的 CPU
+```
 
 {{< details "参考文件" >}} 
 1：[ win11 x86 系统部署 arm 架构的虚拟机  @阿干tkl ](https://blog.csdn.net/m0_58805648/article/details/131195276)

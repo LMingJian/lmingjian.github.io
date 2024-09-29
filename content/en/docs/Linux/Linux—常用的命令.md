@@ -26,14 +26,15 @@ ll  # 以详细信息列出文件
 ## 3.文件夹操作命令
 
 ```bash
+pwd    # 显示当前所在工作目录的全路径
 cd ..  # 进入父文件夹
 cd ~   # root
 cd /   # 根
 rm -rf xxxx  # 删除
 vi test.txt  # 编辑
 vim test.txt  # 编辑
-chmod 4755 filename # root 权限
-chmod -R 4755 filename # 对全部文件加权限
+chmod 755 filename # root 权限
+chmod -R 755 filedirname # 对文件夹全部文件加权限
 chown root KI.txt # 把所有者设置 root
 less as.sh # 文件查看，q 退出，wq! 保存
 head -n 5 as.sh # 查看文件的开头部分的内容，参数 -n 用于显示行数，默认为 10
@@ -79,7 +80,7 @@ shutdown now
 shutdown 13:20  
 shutdown -p now  ### 关闭机器
 shutdown -H now  ### 停止机器      
-shutdown -r09:35 ### 在 09:35am 重启机器
+shutdown -r 09:35 ### 在 09:35am 重启机器
 ```
 
 ## 9.重启
