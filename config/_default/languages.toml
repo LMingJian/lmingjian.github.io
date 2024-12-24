@@ -1,3 +1,11 @@
+[no]
+  languageName = "None"
+  contentDir = "content"
+  weight = 5
+  [no.params]
+    languageISO = "ZH"
+    languageTag = "zh-CN"
+
 [en]
   languageName = "English"
   contentDir = "content/en"
