@@ -1,0 +1,12 @@
+{
+  "livePreview": false,
+  "strictLineBreaks": false,
+  "defaultViewMode": "preview",
+  "showLineNumber": true,
+  "userIgnoreFilters": [
+    "template/",
+    "images/"
+  ],
+  "newFileLocation": "current",
+  "attachmentFolderPath": "/"
+}

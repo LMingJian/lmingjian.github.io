@@ -161,8 +161,9 @@ cython_debug/
 #.idea/
 
 # User File
-node_modules
-public
-resources
-.netlify
+node_modules/
+public/
+resources/
 .hugo_build.lock
+content/docs/_images/
+content/exam/_images/
