@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "184f874489d01219",
+        "id": "59343159dba5e534",
         "type": "tabs",
         "children": [
           {
-            "id": "24e6859a8677f403",
+            "id": "101b5556bacbe13a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -41,33 +41,6 @@
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
-          },
-          {
-            "id": "9bcc327f02054a7c",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "搜索"
-            }
-          },
-          {
-            "id": "e4cf72cc8d5149d8",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "书签"
-            }
           }
         ]
       }
@@ -83,50 +56,6 @@
         "id": "49f8ee0d67b3a884",
         "type": "tabs",
         "children": [
-          {
-            "id": "cb260508c9007120",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "反向链接"
-            }
-          },
-          {
-            "id": "d1711f97884f65b0",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "出链"
-            }
-          },
-          {
-            "id": "aa8cebfed9e7c888",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
           {
             "id": "6e047e4c3603fdd2",
             "type": "leaf",
@@ -154,8 +83,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "22c7b5a3b15cc98d",
+  "active": "101b5556bacbe13a",
   "lastOpenFiles": [
+    "06 软件工程基础知识/08 软件项目管理.md",
     "09 其他/专业英语.md",
     "09 其他/其他考点.md",
     "09 其他/考试大纲.md",
@@ -179,7 +109,6 @@
     "07 软件测试基础知识/02 软件异常及其分类.md",
     "07 软件测试基础知识/01 软件测试基本概念.md",
     "07 软件测试基础知识/_index.md",
-    "06 软件工程基础知识/08 软件项目管理.md",
     "06 软件工程基础知识/07 软件风险管理.md",
     "06 软件工程基础知识/06 软件质量管理.md",
     "_template",

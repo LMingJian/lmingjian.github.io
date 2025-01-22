@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ce55ac1d7d30e834",
+        "id": "0206d435ec63a878",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2f77c1c7d838a8",
+            "id": "924884018ea7a776",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -41,33 +41,6 @@
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
-          },
-          {
-            "id": "1b4aa820abae9ab3",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "搜索"
-            }
-          },
-          {
-            "id": "65fafb9e0c7f7553",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "书签"
-            }
           }
         ]
       }
@@ -83,52 +56,6 @@
         "id": "dd2fa4a533e8608a",
         "type": "tabs",
         "children": [
-          {
-            "id": "0f9010054fff11a6",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Zabbix/Zabbix 的监控模式.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Zabbix 的监控模式 的反向链接列表"
-            }
-          },
-          {
-            "id": "e96b17103da1505b",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Zabbix/Zabbix 的监控模式.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Zabbix 的监控模式 的出链列表"
-            }
-          },
-          {
-            "id": "ef44b7d87c05ba26",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
           {
             "id": "c10c8604dc4d41c2",
             "type": "leaf",
@@ -159,8 +86,27 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "3b2f77c1c7d838a8",
+  "active": "dbf27dbd6fdcdecd",
   "lastOpenFiles": [
+    "Network/如何使用 Wireshark 进行网络抓包.md",
+    "Network/如何使用 sqlmap 进行数据库渗透测试.md",
+    "Network/如何使用 nmap 扫描端口.md",
+    "Network/如何使用 iperf 与 netperf 测量网络性能.md",
+    "Network/如何进行子网的划分.md",
+    "Network/常见的 IP 地址分类.md",
+    "FFmpeg/如何使用 FFmpeg 转换视频文件.md",
+    "FFmpeg/如何使用 FFmpeg 提取视频或音频.md",
+    "Linux/修复 Linux DNS 异常的问题.md",
+    "JMeter/如何使用 JMeter 测试 FLV 直播流.md",
+    "JMeter/如何使用 JMeter 录制测试脚本.md",
+    "JMeter/如何在 Linux 中搭建 JMeter.md",
+    "Linux/如何设置 Linux 开机启动任务.md",
+    "Docker/如何从 Docker 容器里复制文件.md",
+    "Docker/如何管理 Dokcer 容器.md",
+    "Docker/如何管理 Docker 镜像.md",
+    "Docker/如何导出 Docker 镜像.md",
+    "Linux/Linux 的防火墙 firewall-cmd.md",
+    "Linux/Linux 的防火墙 iptables.md",
     "随记/如何使用快捷方式打开 LE.md",
     "随记/如何使用语音识别工具 Whisper.md",
     "随记/如何提高网络的吞吐量.md",
@@ -168,25 +114,6 @@
     "随记/如何清除 UltraEdit 的试用数据.md",
     "随记/如何将两个路由器设置成同一网段.md",
     "随记/如何查看 Iconfont 字体文件.md",
-    "随记/广州旅游景点标记.md",
-    "随记/常见的 GFW 技术.md",
-    "随记/常见的排序算法.md",
-    "_index.md",
-    "_template/properties.md",
-    "Zabbix/Zabbix Server 的 Docker 部署.md",
-    "Zabbix/Zabbix Agent 的部署.md",
-    "Zabbix/Zabbix 的组成.md",
-    "Zabbix/Zabbix 的监控模式.md",
-    "Zabbix/_index.md",
-    "Windows/_index.md",
-    "Windows/修复 Windows 下 Python 环境变量不生效的问题.md",
-    "Windows/修复 Windows 10 锁屏丢失的问题.md",
-    "Windows/如何在 Windows 中移除“应用和功能”中的应用名称.md",
-    "Windows/如何在 Windows 中批量移动文件.md",
-    "Windows/如何在 Windows 中检查端口占用情况.md",
-    "Windows/如何修改 Windows 的右键菜单项.md",
-    "Windows/如何使用 Windows 自带的远程桌面.md",
-    "Web/_index.md",
     "FFmpeg",
     "随记",
     "新建文件夹",

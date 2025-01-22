@@ -9,8 +9,8 @@ author: LiangMingJian
 通过`cp`命令进行文件的复制。
 
 ```bash
-docker cp testtomcat：/usr/local/tomcat/webapps/test/js/test.js /opt  
+docker cp testtomcat:/usr/local/tomcat/webapps/test/js/test.js /opt  
 # 从容器里面拷文件到宿主机
-docker cp /opt/test.js testtomcat：/usr/local/tomcat/webapps/test/js  
+docker cp /opt/test.js testtomcat:/usr/local/tomcat/webapps/test/js  
 # 从宿主机拷文件到容器里面
 ```

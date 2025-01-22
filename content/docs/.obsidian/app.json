@@ -3,10 +3,7 @@
   "strictLineBreaks": false,
   "defaultViewMode": "preview",
   "showLineNumber": true,
-  "userIgnoreFilters": [
-    "template/",
-    "images/"
-  ],
+  "userIgnoreFilters": null,
   "newFileLocation": "current",
   "attachmentFolderPath": "/"
 }

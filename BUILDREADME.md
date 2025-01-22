@@ -221,3 +221,7 @@ jobs:
         uses: actions/deploy-pages@v2
 
 ```
+
+### 补充说明
+
+md 文件存放于 /content/docs 与 /content/exam。目前使用 obsidian 管理该 md 文件，可使用 obsidian 软件打开该目录，作为文档仓库。需要注意的是，在打开前，复制 /static/_images 文件夹到上述两个目录中，以作为图片存放位置。
