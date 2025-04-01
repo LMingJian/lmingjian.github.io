@@ -7,7 +7,7 @@ enableGitInfo = false
 enableRobotsTXT = true
 paginate = 7
 rssLimit = 10
-ignorefiles = [ "docs/_template/.*", "docs/.obsidian/.*", "docs/_images/.*", "exam/_template/.*", "exam/.obsidian/.*", "exam/_images/.*" ]
+ignorefiles = [ "docs/_template/.*", "docs/.obsidian/.*", "docs/_images/.*", "exam/_template/.*", "exam/.obsidian/.*", "exam/_images/.*", "exam2/.*" ]
 
 # Multilingual
 defaultContentLanguage = "no"
