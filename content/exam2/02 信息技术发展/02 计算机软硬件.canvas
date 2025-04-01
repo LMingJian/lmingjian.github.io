@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"b1e194587dc7694c","type":"text","text":"# 计算机硬件的定义\n\n计算机硬件是指计算机系统中由电子、机械和光电元件等组成的各种物理装置的总称。","x":-760,"y":-152,"width":506,"height":162,"color":"6"},
+		{"id":"2de5cda72343a80c","type":"text","text":"# 计算机软件的定义\n\n计算机软件是指计算机系统中的程序及其文档。","x":-80,"y":-152,"width":506,"height":162,"color":"3"},
+		{"id":"029028b8b3dca5a7","x":-440,"y":-540,"width":517,"height":259,"color":"4","type":"text","text":"# 计算机软硬件的关系\n\n硬件是软件赖以工作的物质基础，软件的正常工作是硬件发挥作用的重要途径。\n\n在许多情况下，计算机的某些功能既可以由硬件实现，也可以由软件来实现。因此硬件与软件在一定义上来说没有绝对严格的界线。\n"}
+	],
+	"edges":[
+		{"id":"4ed61506bd937126","fromNode":"029028b8b3dca5a7","fromSide":"bottom","toNode":"b1e194587dc7694c","toSide":"top"},
+		{"id":"d9c881b01c725d03","fromNode":"029028b8b3dca5a7","fromSide":"bottom","toNode":"2de5cda72343a80c","toSide":"top"}
+	]
+}

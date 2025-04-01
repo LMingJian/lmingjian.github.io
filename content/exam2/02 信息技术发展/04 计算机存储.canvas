@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"18e0af4415ff00b5","x":-240,"y":-640,"width":336,"height":180,"color":"4","type":"text","text":"# 计算机存储\n\n存储系统是计算机系统中用于存放数据和程序的重要组成部分，它确保了数据的安全持久化与高效访问。"},
+		{"id":"1ccf51488f1b81c4","x":-215,"y":-380,"width":286,"height":185,"color":"1","type":"text","text":"# 存储的分类\n\n存储根据服务器类型分为：\n\n- 封闭系统的存储\n- 开放系统的存储\n"},
+		{"id":"196958a4e4f2d189","x":-292,"y":-140,"width":440,"height":240,"color":"1","type":"text","text":"# 开放系统的存储\n\n指基于 Windows、UNIX、Linux 等操作系统的存储。\n\n开放系统的存储又分为：\n\n- 内置存储\n- 外挂存储\n"},
+		{"id":"cfb0586a349cb3af","x":-292,"y":160,"width":440,"height":180,"color":"1","type":"text","text":"# 外挂存储\n\n外挂存储根据连接的方式又分为：\n\n- 直连式存储（Direct-Attached Storage，DAS）\n- 网络化存储（Fabric-Attached Storage，FAS）"},
+		{"id":"fdc2314f27649b31","x":-332,"y":394,"width":520,"height":186,"color":"1","type":"text","text":"# 网络化存储\n\n网络化存储根据传输协议又分为：\n\n- 网络接入存储（Network-Attached Storage，NAS）\n- 存储区域网络（Storage Area Network，SAN）\n"},
+		{"id":"fee539748bc31f91","x":300,"y":160,"width":543,"height":420,"color":"1","type":"text","text":"# 外挂存储的对比\n\n![](_images_local/Pasted%20image%2020250108144245.png)\n"},
+		{"id":"a7b9ffc02f031a3c","x":-600,"y":-50,"width":250,"height":60,"color":"1","type":"text","text":"# 内置存储\n\n"},
+		{"id":"cdecb3cf31c9d43c","x":-580,"y":-339,"width":305,"height":104,"color":"1","type":"text","text":"# 封闭系统的存储\n\n特指大型机的存储。"},
+		{"id":"e4696d65861345cf","x":-600,"y":220,"width":250,"height":60,"color":"1","type":"text","text":"# 直连式存储"},
+		{"id":"b4642268362d0077","x":331,"y":-700,"width":482,"height":301,"color":"6","type":"text","text":"# 存储虚拟化\n\n存储虚拟化（Storage Virtualization ) 是“云存储”的核心技术之一，它把来自一个或多个网络的存储资源整合起来，向用户提供一个抽象的逻辑视图，用户可以通过这个视图中的统一逻辑接口来访问被整合的存储资源，用户在访问数据时并不知道真实的物理位置。\n\n存储虚拟化的好处是提高了存储利用率，降低了存储成本，简化了大型、复杂、异构的存储环境的管理工作。"},
+		{"id":"d2279de65e7931a1","x":331,"y":-339,"width":482,"height":347,"color":"5","type":"text","text":"# 绿色存储\n\n绿色存储（Green Storage）技术是指从节能环保的角度出发，用来设计生产能效更佳的存 储产品，降低数据存储设备的功耗，提高存储设备每瓦性能的技术。\n\n绿色存储技术的核心是设计运行温度更低的处理器和更有效率的系统，生产更低能耗的存储系统或组件，降低产品所产生的电子碳化合物。\n\n以绿色理念为指导的存储系统最终是存储容量、性能、能耗三者的平衡。 "}
+	],
+	"edges":[
+		{"id":"ade30a878395463c","fromNode":"18e0af4415ff00b5","fromSide":"bottom","toNode":"1ccf51488f1b81c4","toSide":"top"},
+		{"id":"82b4dde57a96e54c","fromNode":"1ccf51488f1b81c4","fromSide":"left","toNode":"cdecb3cf31c9d43c","toSide":"right"},
+		{"id":"18f4d0f8281925d6","fromNode":"1ccf51488f1b81c4","fromSide":"bottom","toNode":"196958a4e4f2d189","toSide":"top"},
+		{"id":"ba74abdbf019518d","fromNode":"cfb0586a349cb3af","fromSide":"right","toNode":"fee539748bc31f91","toSide":"left"},
+		{"id":"e8dd72f602d03679","fromNode":"fdc2314f27649b31","fromSide":"right","toNode":"fee539748bc31f91","toSide":"left"},
+		{"id":"419af8ae1f5ab302","fromNode":"196958a4e4f2d189","fromSide":"bottom","toNode":"cfb0586a349cb3af","toSide":"top"},
+		{"id":"2e80c83cedfe127d","fromNode":"cfb0586a349cb3af","fromSide":"bottom","toNode":"fdc2314f27649b31","toSide":"top"},
+		{"id":"153ea646e4a46c21","fromNode":"196958a4e4f2d189","fromSide":"left","toNode":"a7b9ffc02f031a3c","toSide":"right"},
+		{"id":"b9094967d0061160","fromNode":"cfb0586a349cb3af","fromSide":"left","toNode":"e4696d65861345cf","toSide":"right"},
+		{"id":"eb2e3cfa7ec28099","fromNode":"18e0af4415ff00b5","fromSide":"right","toNode":"b4642268362d0077","toSide":"left"},
+		{"id":"0c7b3bcb5ec7797b","fromNode":"18e0af4415ff00b5","fromSide":"right","toNode":"d2279de65e7931a1","toSide":"left"}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"41308046a2871a6f","type":"text","text":"# 概念模型\n\n概念模型也称信息模型，它是按用户的观点来对数据和信息建模，也就是说，把现实世界中的客观对象抽象为某一种信息结构。\n\n概念模型不依赖于具体的计算机系统，也不对应某个具体的 DBMS（数据库管理系统），它是概念级别的模型。\n","x":-632,"y":-279,"width":472,"height":240,"color":"1"},
+		{"id":"d28351eb69fee770","type":"text","text":"# 逻辑模型\n\n逻辑模型是在概念模型的基础上确定模型的数据结构。\n\n逻辑模型主要的数据结构包括：\n\n- 层次模型\n- 网状模型\n- 关系模型\n- 面向对象模型\n- 对象关系模型\n","x":-632,"y":-1,"width":472,"height":320,"color":"1"},
+		{"id":"c7364c6dde302c11","type":"text","text":"# 物理模型\n\n物理数据模型是在逻辑数据模型的基础上，考虑各种具体的技术实现因素，进行数据库体系结构设计，真正实现数据在数据库中的存放。\n\n物理数据模型的内容包括确定所有的表和列，定义外键用于确定表之间的关系，基于性能的需求可能进行反规范化处理等内容。\n\n在物理实现上的考虑，可能会导致物理数据模型和逻辑数据模型有较大的不同。\n\n物理数据模型的目标是如何用数据库模式来实现逻辑数据模型，以及真正地保存数据。\n\n物理模型的基本元素包括表、字 段、视图、索引、 存储过程、触发器等，其中表、字段和视图等元素与逻辑模型中基本元素有一定的对应关系。","x":-632,"y":359,"width":472,"height":491,"color":"1"},
+		{"id":"296bea8514f74a4c","type":"text","text":"# 概念模型的基本元素\n\n![](_images_local/Pasted%20image%2020250116104804.png)\n","x":-1172,"y":-850,"width":717,"height":440,"color":"1"},
+		{"id":"8b7c950bd14d4193","type":"text","text":"# 概念模型的要求\n\n- 概念模型是对现实世界的抽象和概括，它应该真实、充分地反映现实世界中事物和事物之间的联系，有丰富的语义表达能力，能表达用户的各种需求。\n- 概念模型应简洁、明晰、独立于机器、容易理解，方便数据库设计人员与用户交换意见，使用户能够积极参与数据库的设计工作。\n- 概念模型应易于变动，当应用环境和应用要求改变时，容易修改和补充概念模型。\n- 概念模型应容易向关系、层次或网状等各种数据模型转换，易于从概念模型导出与 DBMS 相关的逻辑模型。","x":-387,"y":-690,"width":710,"height":280,"color":"1"},
+		{"id":"5f80dcbb9759a8ab","type":"text","text":"# 关系模型的完整性约束条件\n\n关系数据模型的数据操作必须满足关系的完整性约束条件。\n\n关系的完整性约束包括三大类型：\n\n- 实体完整性\n- 参照完整性\n- 用户定义的完整性\n\n实体完整性、参照完整性是关系模型必须满足的完整性约束条件，用户定义的完整性是应用领域需要遵照的约束条件。\n","x":-1351,"y":349,"width":613,"height":337,"color":"1"},
+		{"id":"5751a3bfeeed9a99","type":"text","text":"# 关系模型与概念模型的对应\n\n![](_images_local/Pasted%20image%2020250124161423.png)","x":-1352,"y":9,"width":613,"height":300,"color":"1"},
+		{"id":"f314cb24b9af8aa2","type":"text","text":"# 关系模型的基本元素\n\n- 关系\n- 关系的属性\n- 视图","x":-1062,"y":-211,"width":323,"height":180,"color":"1"},
+		{"id":"247a4f6258ccdd54","type":"text","text":"# 数据模型的分类\n\n根据模型应用目的不同，可以分为三类：\n\n- 概念模型\n- 逻辑模型\n- 物理模型","x":-39,"y":70,"width":362,"height":222,"color":"1"},
+		{"id":"6156b01a01137c09","type":"text","text":"# 数据需求分析\n\n数据需求分析就是分析用户对数据的需要和要求。\n\n数据需求分析是数据建模的起点，数据需求掌握的准确程度将直接影响后续阶段数据模型的质量。\n\n**数据需求分析采用数据流图作为工具，描述系统中数据的流动和变化，强调数据流和处理过程。**","x":-59,"y":441,"width":327,"height":327,"color":"2"},
+		{"id":"eeecc5f48acaba5c","type":"text","text":"# 逻辑模型设计\n\n逻辑模型设计是指在概念模型的基础上进行逻辑模型设计的过程，现在主要指关系模型结构的设计。\n\n逻辑模型设计的任务就是将概念模型中实体、属性和关联转换为关系模型结构中的关系模式。","x":668,"y":441,"width":324,"height":269,"color":"2"},
+		{"id":"8022ee6bfdd6a587","type":"text","text":"# 物理模型设计\n\n物理模型设计是将数据模型转换为真正的数据库结构的过程，使数据模型走向数据存储应用环节。\n\n物理模型考虑的主要问题包括命名、确定字段类型和编写必要的存储过程与触发器等。","x":1028,"y":441,"width":324,"height":269,"color":"2"},
+		{"id":"fc83891014571278","type":"text","text":"# 概念模型设计\n\n概念模型设计是指将需求分析得到结果抽象为概念模型的过程，其任务是确定实体和数据及其关联。","x":300,"y":441,"width":327,"height":164,"color":"2"},
+		{"id":"4ed3268c2ec15601","type":"text","text":"# 数据建模\n\n数据建模是对现实世界中具体的人、物、活动和概念进行抽象、表示和处理，变成计算机可处理的数据，也就是把现实世界中的数据从现实世界抽象到信息世界和计算机世界。\n\n","x":111,"y":-248,"width":517,"height":179,"color":"4"},
+		{"id":"4705c505b7e532f6","type":"text","text":"# 数据建模过程\n\n数据建模过程包括：\n\n- 数据需求分析\n- 概念模型设计\n- 逻辑模型设计\n- 物理模型设计\n\n\n\n\n\n\n\n","x":498,"y":60,"width":259,"height":249,"color":"2"}
+	],
+	"edges":[
+		{"id":"87367bb445b624b5","fromNode":"41308046a2871a6f","fromSide":"top","toNode":"296bea8514f74a4c","toSide":"bottom"},
+		{"id":"f6afe811f2c7a13a","fromNode":"41308046a2871a6f","fromSide":"top","toNode":"8b7c950bd14d4193","toSide":"bottom"},
+		{"id":"83e661f21be48e6b","fromNode":"247a4f6258ccdd54","fromSide":"left","toNode":"41308046a2871a6f","toSide":"right"},
+		{"id":"eb2d1fb408b69e6f","fromNode":"d28351eb69fee770","fromSide":"left","toNode":"5751a3bfeeed9a99","toSide":"right"},
+		{"id":"347a6cdbc65ac7b8","fromNode":"d28351eb69fee770","fromSide":"left","toNode":"f314cb24b9af8aa2","toSide":"right"},
+		{"id":"c2ac82caf12b6bc9","fromNode":"d28351eb69fee770","fromSide":"left","toNode":"5f80dcbb9759a8ab","toSide":"right"},
+		{"id":"0bc9d55b3bc5af45","fromNode":"247a4f6258ccdd54","fromSide":"left","toNode":"d28351eb69fee770","toSide":"right"},
+		{"id":"2daa1a45f6b9c44a","fromNode":"247a4f6258ccdd54","fromSide":"left","toNode":"c7364c6dde302c11","toSide":"right"},
+		{"id":"dd076e3bb867c005","fromNode":"4ed3268c2ec15601","fromSide":"bottom","toNode":"4705c505b7e532f6","toSide":"top"},
+		{"id":"985097fe159b6238","fromNode":"4705c505b7e532f6","fromSide":"bottom","toNode":"6156b01a01137c09","toSide":"top"},
+		{"id":"d5a884101a80a5db","fromNode":"4705c505b7e532f6","fromSide":"bottom","toNode":"fc83891014571278","toSide":"top"},
+		{"id":"542a46338d16b09d","fromNode":"4705c505b7e532f6","fromSide":"bottom","toNode":"eeecc5f48acaba5c","toSide":"top"},
+		{"id":"f30da3d3319454f0","fromNode":"4705c505b7e532f6","fromSide":"bottom","toNode":"8022ee6bfdd6a587","toSide":"top"},
+		{"id":"1a9d04d41ce429c0","fromNode":"4ed3268c2ec15601","fromSide":"bottom","toNode":"247a4f6258ccdd54","toSide":"top"}
+	]
+}

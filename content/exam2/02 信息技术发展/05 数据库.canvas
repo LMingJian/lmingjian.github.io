@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"d4d4848d2fed4d44","x":-200,"y":-320,"width":398,"height":180,"color":"4","type":"text","text":"# 数据库\n\n数据库是用来组织、存储和管理数据的仓库，用户可以对数据库中的数据进行新增、查询、更新、删除等操作。\n"},
+		{"id":"921cfde8a1f2b495","x":-180,"y":160,"width":358,"height":180,"color":"1","type":"text","text":"# 数据结构模型的分类\n\n- 层次模型\n- 网状模型\n- 关系模型\n\n"},
+		{"id":"e14fe798a3aa62c8","x":-231,"y":-80,"width":460,"height":180,"color":"1","type":"text","text":"# 数据结构模型\n\n数据结构模型是数据库系统的核心。\n\n数据结构模型描述了在数据库中结构化数据（数据如何被描述）和操纵数据（数据的增删查改）的方法。\n"},
+		{"id":"7c6798048308ff53","x":-767,"y":440,"width":493,"height":385,"color":"1","type":"text","text":"# 层次模型\n\n层次模型是用树状<层次>结构来组织数据的数据模型。\n\n![](_images_local/Pasted%20image%2020250108150339.png)"},
+		{"id":"f050e193c9493c58","x":-247,"y":440,"width":493,"height":420,"color":"1","type":"text","text":"# 网状模型\n\n网状模型是用有向图表示实体和实体之间联系的数据模型。\n\n![](_images_local/Pasted%20image%2020250108150411.png)"},
+		{"id":"a446ada1dd4e94e7","x":273,"y":440,"width":493,"height":660,"color":"1","type":"text","text":"# 关系模型\n\n关系模型是用表格表示实体和实体之间关系的数据模型。\n\n![](_images_local/Pasted%20image%2020250108150549.png)"},
+		{"id":"a5b9cae38392741c","x":860,"y":565,"width":562,"height":410,"color":"1","type":"text","text":"# 关系模型的约束完整性\n \n- **实体完整性**：\n    - 规定实体的所有主属性都不能为空，具有唯一性标志。\n    - 这种标志在关系模型中称之为主码，主码的属性也就是主属性不能为空。（主键）\n- **参照完整性**：\n    - 如果两个关系中，一个属性依赖于另一个属性，那么这一个属性必须出现在另外一个关系中。\n    - （外键）\n- **用户定义完整性**：\n    - 某一个具体应用所对应的数据必须满足一定的约束条件。\n    - 例如，某些属性必须取唯一值，某些值的范围为 0-100 等。\n"},
+		{"id":"256de7c3f1a510be","x":320,"y":-320,"width":327,"height":180,"color":"2","type":"text","text":"# 数据库的分类\n\n数据库根据存储方式可以分为：\n\n- 关系数据库（SQL）\n- 非关系型数据库（NoSQL）\n"},
+		{"id":"2087d39652f0002f","x":320,"y":-80,"width":327,"height":260,"color":"2","type":"text","text":"# 关系数据库 SQL\n\nSQL 是采用关系模型作为数据的组织方式，支持事务的 ACID 原则的数据库系统。\n\n常见的关系数据库有：Mysql、DB2、Access、PostgreSQL、SQLite、达梦"},
+		{"id":"cffa7af61309378c","x":766,"y":-320,"width":620,"height":180,"color":"2","type":"text","text":"# 非关系型数据库 NoSQL\n\nNoSQL 是分布式的、非关系型的、不保证遵循 ACID 原则的数据存储系统。\n\n常见的非关系型数据库有：键值数据库 Redis，列存储数据库 HBase，面向文档数据库 MongoDB，图形数据库 Neo4j"},
+		{"id":"aee5e7f184497fec","x":1141,"y":-50,"width":619,"height":200,"color":"2","type":"text","text":"# 非关系型数据库的优缺点\n\n- 优点：不需要固定的表结构，通常也不存在连接操作，在大数据存取上具备关系型数据库无法比拟的性能优势。高并发读写较强，支持分布式，易于扩展，可伸缩，简单。\n- 缺点：事务支持差，通用性差，无完整性约束，复杂事务支持差。"},
+		{"id":"6a61319894859482","x":766,"y":-50,"width":327,"height":200,"color":"2","type":"text","text":"# ACID 原则\n\n- 原子性（Atomicity）\n- 一致性（Consistency）\n- 隔离性（Isolation）\n- 持久性（Durability）\n"},
+		{"id":"1c83791bcedc0c02","x":766,"y":220,"width":405,"height":149,"color":"2","type":"text","text":"# 关系型数据库的优缺点\n\n- 优点：容易理解，使用方便，易于维护\n- 缺点：性能开销大，扩展困难\n"}
+	],
+	"edges":[
+		{"id":"e5f3b4d616a94835","fromNode":"d4d4848d2fed4d44","fromSide":"bottom","toNode":"e14fe798a3aa62c8","toSide":"top"},
+		{"id":"22280dfa47bf4078","fromNode":"e14fe798a3aa62c8","fromSide":"bottom","toNode":"921cfde8a1f2b495","toSide":"top"},
+		{"id":"da2ed8104eb66f98","fromNode":"921cfde8a1f2b495","fromSide":"bottom","toNode":"f050e193c9493c58","toSide":"top"},
+		{"id":"b08f2d33475b5037","fromNode":"921cfde8a1f2b495","fromSide":"bottom","toNode":"7c6798048308ff53","toSide":"top"},
+		{"id":"4be004762f2692ae","fromNode":"921cfde8a1f2b495","fromSide":"bottom","toNode":"a446ada1dd4e94e7","toSide":"top"},
+		{"id":"d1207b6209bd2fae","fromNode":"a446ada1dd4e94e7","fromSide":"right","toNode":"a5b9cae38392741c","toSide":"left"},
+		{"id":"7f19756dc09dec3c","fromNode":"d4d4848d2fed4d44","fromSide":"right","toNode":"256de7c3f1a510be","toSide":"left"},
+		{"id":"7d109b2b6b51b39f","fromNode":"a446ada1dd4e94e7","fromSide":"top","toNode":"2087d39652f0002f","toSide":"bottom"},
+		{"id":"7028004a83e9f30b","fromNode":"256de7c3f1a510be","fromSide":"bottom","toNode":"2087d39652f0002f","toSide":"top"},
+		{"id":"156768d214b4ed11","fromNode":"2087d39652f0002f","fromSide":"right","toNode":"6a61319894859482","toSide":"left"},
+		{"id":"c07d4a3702cd5613","fromNode":"256de7c3f1a510be","fromSide":"right","toNode":"cffa7af61309378c","toSide":"left"},
+		{"id":"59118a8bd339219d","fromNode":"2087d39652f0002f","fromSide":"right","toNode":"1c83791bcedc0c02","toSide":"left"},
+		{"id":"81200ef9859c86c8","fromNode":"cffa7af61309378c","fromSide":"bottom","toNode":"aee5e7f184497fec","toSide":"top"}
+	]
+}

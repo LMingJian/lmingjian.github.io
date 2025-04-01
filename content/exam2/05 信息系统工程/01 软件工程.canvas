@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"4a8e623c97d3252e","type":"text","text":"# 软件工程\n\n软件工程是指应用计算机科学、数学及管理科学等原理，以工程化的原则和方法来解决软件问题的工程，其目的是提高软件生产率、提高软件质量、降低软件成本。\n\n电气与电子工程师协会 IEEE 对软件工程的定义是：将系统的、 规范的、可度量的工程化方法应用于软件开发、运行和维护的全过程及上述方法的研究。\n","x":-540,"y":-560,"width":661,"height":220,"color":"4"},
+		{"id":"d46146574fbeb8e7","x":-140,"y":-200,"width":308,"height":260,"color":"1","type":"text","text":"# 软件工程的内容\n\n- 架构设计\n- 需求分析\n- 软件设计\n- 软件实现\n- 部署交付\n- 过程管理\n"},
+		{"id":"3397f1ce171f47ca","type":"text","text":"# 软件工程的组成\n\n- 方法\n- 工具\n- 过程\n","x":-560,"y":-200,"width":282,"height":168,"color":"2"}
+	],
+	"edges":[
+		{"id":"f73a3cce2890f7b3","fromNode":"4a8e623c97d3252e","fromSide":"bottom","toNode":"d46146574fbeb8e7","toSide":"top"},
+		{"id":"d92b83aed6c024f5","fromNode":"4a8e623c97d3252e","fromSide":"bottom","toNode":"3397f1ce171f47ca","toSide":"top"}
+	]
+}

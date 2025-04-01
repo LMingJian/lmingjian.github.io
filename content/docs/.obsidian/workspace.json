@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0206d435ec63a878",
+        "id": "58d2c2ef90198f86",
         "type": "tabs",
         "children": [
           {
-            "id": "924884018ea7a776",
+            "id": "cd7c4f86c5d5040e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -61,11 +61,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Zabbix/Zabbix 的监控模式.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Zabbix 的监控模式 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -77,43 +75,49 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false
+      "canvas:新建白板": false
     }
   },
   "active": "dbf27dbd6fdcdecd",
   "lastOpenFiles": [
-    "Network/如何使用 Wireshark 进行网络抓包.md",
-    "Network/如何使用 sqlmap 进行数据库渗透测试.md",
-    "Network/如何使用 nmap 扫描端口.md",
-    "Network/如何使用 iperf 与 netperf 测量网络性能.md",
-    "Network/如何进行子网的划分.md",
-    "Network/常见的 IP 地址分类.md",
-    "FFmpeg/如何使用 FFmpeg 转换视频文件.md",
-    "FFmpeg/如何使用 FFmpeg 提取视频或音频.md",
-    "Linux/修复 Linux DNS 异常的问题.md",
-    "JMeter/如何使用 JMeter 测试 FLV 直播流.md",
-    "JMeter/如何使用 JMeter 录制测试脚本.md",
-    "JMeter/如何在 Linux 中搭建 JMeter.md",
-    "Linux/如何设置 Linux 开机启动任务.md",
-    "Docker/如何从 Docker 容器里复制文件.md",
+    "随记/如何测试小程序.md",
+    "Windows/如何使用 Windows 自带的远程桌面.md",
+    "随记/二叉树的度和遍历方式.md",
+    "_images/drawingbed/img/202504011551454.png",
+    "_images/drawingbed/img/202504011549323.png",
+    "_images/drawingbed/img/202504011545882.png",
+    "(/_images/drawingbed/img/202504011551454.png.md",
+    "(/_images/drawingbed/img",
+    "(/_images/drawingbed",
+    "(/_images",
+    "(",
+    "_index.md",
+    "Windows/修复 Windows 下 Python 环境变量不生效的问题.md",
+    "Windows/修复 Windows 10 锁屏丢失的问题.md",
+    "Windows/如何在 Windows 中移除“应用和功能”中的应用名称.md",
+    "Windows/如何在 Windows 中批量移动文件.md",
+    "Windows/如何在 Windows 中检查端口占用情况.md",
+    "Windows/如何修改 Windows 的右键菜单项.md",
+    "_images/drawingbed/img/202212061940070.png",
+    "Zabbix/Zabbix Agent 的部署.md",
+    "Zabbix/Zabbix Server 的 Docker 部署.md",
+    "Zabbix/Zabbix 的组成.md",
+    "Zabbix/Zabbix 的监控模式.md",
+    "Pasted image 20250401154802.png",
+    "Linux/Linux Shell 的特殊变量.md",
+    "Hugging Face 模型下载.md",
+    "未命名",
+    "Docker/如何修改 Docker 的镜像源.md",
+    "Docker/如何修改 Docker 容器的端口映射.md",
+    "Docker/Docker 的网络原理.md",
+    "Docker/通过 yum 安装 Docker.md",
+    "Docker/如何让 Docker 容器在后台运行.md",
     "Docker/如何管理 Dokcer 容器.md",
+    "Docker/如何管理 Dokcer 服务.md",
     "Docker/如何管理 Docker 镜像.md",
-    "Docker/如何导出 Docker 镜像.md",
-    "Linux/Linux 的防火墙 firewall-cmd.md",
-    "Linux/Linux 的防火墙 iptables.md",
-    "随记/如何使用快捷方式打开 LE.md",
-    "随记/如何使用语音识别工具 Whisper.md",
-    "随记/如何提高网络的吞吐量.md",
-    "随记/如何通过 EasyDarwin 模拟摄像头 RTSP 流.md",
-    "随记/如何清除 UltraEdit 的试用数据.md",
-    "随记/如何将两个路由器设置成同一网段.md",
-    "随记/如何查看 Iconfont 字体文件.md",
+    "Docker/如何管理 Docker 的网络.md",
+    "Work.canvas",
     "FFmpeg",
     "随记",
     "新建文件夹",
@@ -121,19 +125,8 @@
     "_images/drawingbed/img/202204291754285.png",
     "_images/drawingbed/img/202204291755738.png",
     "images/drawingbed/img",
-    "images/drawingbed",
-    "images",
     "_images/drawingbed/img/202412051055967.png",
     "_images/drawingbed/img/202412051055649.png",
-    "_images/drawingbed/img/202412051055524.png",
-    "_images/drawingbed/img/202412051052543.png",
-    "_images/drawingbed/img/202412051052085.png",
-    "_images/drawingbed/img/202412051043794.png",
-    "_images/drawingbed/img/202412051042869.png",
-    "_images/drawingbed/img/202412051038927.png",
-    "Linux",
-    "JMeter",
-    "Network",
-    "未命名.canvas"
+    "_images/drawingbed/img/202412051055524.png"
   ]
 }

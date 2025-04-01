@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"d94ea470f864670d","type":"text","text":"# 数据库安全\n\n数据库安全是指保护数据库，防止不合法的使用所造成的数据泄露、更改或破坏。","x":-192,"y":0,"width":461,"height":140,"color":"4"},
+		{"id":"06ca19cb431a473e","type":"text","text":"# 数据库安全威胁\n\n![](_images_local/Pasted%20image%2020250118115717.png)\n","x":-1000,"y":-138,"width":693,"height":416,"color":"1"},
+		{"id":"28e7357159203dda","type":"text","text":"# 数据库安全机制\n\n- 用户的身份认证\n- 存取控制\n- 数据库加密\n- 数据审计\n- 推理控制\n","x":-208,"y":220,"width":493,"height":233,"color":"2"},
+		{"id":"f7743df2510a3389","type":"text","text":"# 数据库安全策略\n\n![](_images_local/Pasted%20image%2020250124173059.png)\n![](_images_local/Pasted%20image%2020250124173112.png)\n![](_images_local/Pasted%20image%2020250124173123.png)\n","x":420,"y":-460,"width":673,"height":1060,"color":"3"},
+		{"id":"621892dd16d07175","type":"text","text":"# 数据安全\n\n数据是脆弱的，它可能被无意识或有意识地破坏、修改，需要采用一定的数据安全措施，确保合法的用户、采用正确的方式、在正确的时间、对相应的数据进行正确的操作，确保数据的机密性、完整性、可用性和合法使用。\n","x":-240,"y":-260,"width":557,"height":182,"color":"4"}
+	],
+	"edges":[
+		{"id":"73b34b543540ffa8","fromNode":"621892dd16d07175","fromSide":"bottom","toNode":"d94ea470f864670d","toSide":"top"},
+		{"id":"2fa6b5a94df48269","fromNode":"d94ea470f864670d","fromSide":"right","toNode":"f7743df2510a3389","toSide":"left"},
+		{"id":"2bbe2fc30b0d3992","fromNode":"d94ea470f864670d","fromSide":"left","toNode":"06ca19cb431a473e","toSide":"right"},
+		{"id":"d9030eed03587615","fromNode":"d94ea470f864670d","fromSide":"bottom","toNode":"28e7357159203dda","toSide":"top"}
+	]
+}

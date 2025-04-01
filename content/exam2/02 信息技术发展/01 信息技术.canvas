@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"3d7584b53a9fc70f","type":"text","text":"# 信息技术\n\n信息技术（Information Technology，IT）也称信息和通信技术，是主要用于管理和处理信息所采用的各种技术总称，也可以指应用计算机科学和通信技术来设计、开发、安装和部署的信息系统及应用软件。\n\n信息技术是在信息科学的基本原理和方法下，获取信息、处理信息、传输信息和使用信息的应用技术总称。\n\n信息技术是以微电子学为基础的计算机技术和电信技术的结合而形成的，对声音的、图像的、文字的、数字的和各种传感信号的信息进行获取、加工、处理、存储、传播和使用的技术。\n\n信息技术是实现信息化的手段，是信息系统建设的基础。\n","x":-356,"y":-540,"width":675,"height":366,"color":"4"},
+		{"id":"4629d0c4653012ea","type":"text","text":"# 新一代信息技术的内容\n\n- 物联网\n- 云计算\n- 大数据\n- 区块链\n- 人工智能\n- 虚拟现实\n","x":200,"y":-60,"width":474,"height":259,"color":"6"},
+		{"id":"ee153709065a76d9","type":"text","text":"# 信息技术的分类\n\n- 硬技术\n- 软技术\n","x":-558,"y":-60,"width":280,"height":140,"color":"3"},
+		{"id":"f0bb3ce50b15d666","type":"text","text":"# 硬技术\n\n硬技术又称物化技术，是指各种信息设备及其功能。\n\n例如：传感器、服务器、智能手机、通信卫星、电脑等。","x":-778,"y":160,"width":340,"height":220,"color":"3"},
+		{"id":"f4bc91d5d834ff64","type":"text","text":"# 软技术\n\n软技术又称非物化技术，是指有关信息获取与处理的各种知识、方法与技能。\n\n例如：语言文字技术、数据统计分析技术、规划决策技术、计算机软件技术等。","x":-398,"y":160,"width":380,"height":220,"color":"3"}
+	],
+	"edges":[
+		{"id":"6e56efe496e8b64c","fromNode":"ee153709065a76d9","fromSide":"bottom","toNode":"f0bb3ce50b15d666","toSide":"top"},
+		{"id":"10f69dc4bacaff05","fromNode":"ee153709065a76d9","fromSide":"bottom","toNode":"f4bc91d5d834ff64","toSide":"top"},
+		{"id":"6046565b3442d39b","fromNode":"3d7584b53a9fc70f","fromSide":"bottom","toNode":"ee153709065a76d9","toSide":"top"},
+		{"id":"c60c73ad701018b2","fromNode":"3d7584b53a9fc70f","fromSide":"bottom","toNode":"4629d0c4653012ea","toSide":"top"}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"7b43c6ca7b76d9e8","type":"text","text":"# 信息系统的定义\n\n信息系统是由相互联系、相互依赖、相互作用的事物或过程组成的具有整体功能和综合行为的统一体。\n\n信息系统的主要功能是通过输入数据，然后进行加工处理，最后产生信息。\n\n面向管理和支持生产是信息系统的显著特点。\n\n以计算机为基础的信息系统可以定义为：结合管理理论和方法，应用信息技术解决管理问题，提高生产效率，为生产或信息化过程以及管理和决策提供支撑的系统。\n\n信息系统建设周期长、投资大、风险大，比一般技术工程有更大的难度和复杂性。\n","x":-628,"y":-640,"width":480,"height":410,"color":"4"},
+		{"id":"a03bf840d1611b33","type":"text","text":"# 信息系统的分类\n\n- 电子商务系统\n- 事务处理系统\n- 管理信息系统\n- 生产制造系统\n- 电子政务系统\n- 决策支持系统","x":-628,"y":-87,"width":297,"height":259,"color":"2"},
+		{"id":"78a8ead0b064da32","type":"text","text":"# 信息系统的生命周期\n\n- 系统规划（可行性分析与项目开发计划）\n- 系统分析（需求分析）\n- 系统设计（概要设计、详细设计），\n- 系统实施（编码、测试）\n- 系统运行和维护\n","x":-238,"y":-87,"width":420,"height":230,"color":"3"},
+		{"id":"f93316a4b11b83b2","type":"text","text":"# 信息系统的组成\n\n- 硬件和软件\n- 数据库\n- 网络\n- 存储设备\n- 感知设备\n- 外设\n- 人员\n- 数据处理规程（把数据处理成信息）","x":265,"y":-230,"width":390,"height":318,"color":"6"},
+		{"id":"067ce34ac49849e6","type":"text","text":"# 信息系统的结构\n\n- 管理模型\n- 信息处理模型\n- 系统实现条件\n","x":60,"y":-604,"width":283,"height":178,"color":"5"},
+		{"id":"d84030519a19850f","type":"text","text":"\n管理模型是系统服务对象领域的专门知识，以及分析和处理该领域问题的模型，又称为对象的处理模型。","x":480,"y":-720,"width":500,"height":89,"color":"5"},
+		{"id":"ea1fea17e2994c08","type":"text","text":"信息处理模型是系统处理信息的结构和方法。管理模型中的理论和分析方法，在信息处理模型中转化为信息获取、存储、传输、加工和使用的规则。","x":480,"y":-563,"width":500,"height":96,"color":"5"},
+		{"id":"11af1666277f13f7","type":"text","text":"系统实现条件是指可供应用的计算机技术和通信技术、或从事对象领域工作的人员，以及对这些资源的控制与融合。","x":480,"y":-394,"width":500,"height":84,"color":"5"}
+	],
+	"edges":[
+		{"id":"eddf6d8e8d73c4cd","fromNode":"7b43c6ca7b76d9e8","fromSide":"bottom","toNode":"a03bf840d1611b33","toSide":"top"},
+		{"id":"d9fd46f05fded7e7","fromNode":"7b43c6ca7b76d9e8","fromSide":"right","toNode":"067ce34ac49849e6","toSide":"left"},
+		{"id":"89b91da49c394f59","fromNode":"067ce34ac49849e6","fromSide":"right","toNode":"d84030519a19850f","toSide":"left"},
+		{"id":"08f574d4075934ff","fromNode":"067ce34ac49849e6","fromSide":"right","toNode":"ea1fea17e2994c08","toSide":"left"},
+		{"id":"db2ee46c06fb50d8","fromNode":"067ce34ac49849e6","fromSide":"right","toNode":"11af1666277f13f7","toSide":"left"},
+		{"id":"acaf3cca833ce16e","fromNode":"7b43c6ca7b76d9e8","fromSide":"bottom","toNode":"78a8ead0b064da32","toSide":"top"},
+		{"id":"ff96c02ca46db978","fromNode":"7b43c6ca7b76d9e8","fromSide":"right","toNode":"f93316a4b11b83b2","toSide":"left"}
+	]
+}

@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "04758cef8361ae58",
+    "type": "split",
+    "children": [
+      {
+        "id": "89290f3589214360",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6640de7f1ea46da",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a602568f37d11749",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b4fd04b957b4f93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5865f65a93697497",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "18c554841112c829",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 224.5
+  },
+  "right": {
+    "id": "c189813067aee1c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c556f98d35f08402",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e6f82a051301d74",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "05 信息系统工程/信息系统集成.md"
+              },
+              "icon": "lucide-list",
+              "title": "信息系统集成 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 213.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:查看关系图谱": false,
+      "templates:插入模板": false,
+      "canvas:新建白板": false
+    }
+  },
+  "active": "5865f65a93697497",
+  "lastOpenFiles": [
+    "05 信息系统工程/15 信息安全系统.canvas",
+    "05 信息系统工程/14 信息系统集成.canvas",
+    "05 信息系统工程/13 数据安全.canvas",
+    "05 信息系统工程/12 数据开发利用.canvas",
+    "05 信息系统工程/11 数据运维.canvas",
+    "05 信息系统工程/10 数据标准化.canvas",
+    "05 信息系统工程/09 数据建模.canvas",
+    "05 信息系统工程/08 数据工程.canvas",
+    "05 信息系统工程/07 软件过程管理.canvas",
+    "05 信息系统工程/06 软件部署交付.canvas",
+    "05 信息系统工程/05 软件实现.canvas",
+    "05 信息系统工程/16 练习.md",
+    "05 信息系统工程/信息安全系统工程.md",
+    "04 信息系统管理/08 练习.md",
+    "05 信息系统工程/信息系统集成.md",
+    "_images_local/20230129.md",
+    "04 信息系统管理/运维管理.md",
+    "04 信息系统管理/04 数据管理.md",
+    "04 信息系统管理/05 运维管理.md",
+    "04 信息系统管理/03 信息系统管理要点.md",
+    "05 信息系统工程/04 信息安全系统工程.md",
+    "05 信息系统工程/03 信息系统集成.md",
+    "05 信息系统工程/02 数据工程.md",
+    "05 信息系统工程/01 软件工程.md",
+    "04 信息系统管理/06 信息安全管理.md",
+    "_images_local/Pasted image 20250123111624.png",
+    "_images_local/Pasted image 20250123110732.png",
+    "_images_local/Pasted image 20250123110722.png",
+    "_images_local/Pasted image 20250123110714.png",
+    "_images_local/Pasted image 20250123110704.png",
+    "_images_local/Pasted image 20250123110409.png",
+    "_images_local/Pasted image 20250123110356.png",
+    "_images_local/Pasted image 20250123093222.png",
+    "_images_local/Pasted image 20250122184834.png",
+    "_images_local/Pasted image 20250122184748.png",
+    "04 信息系统管理/02 信息系统管理领域.md",
+    "04 信息系统管理/01 信息系统.md",
+    "04 信息系统管理/07 练习.md",
+    "03 信息系统治理/05 练习.md",
+    "02 信息技术发展/07 数据仓库.md",
+    "02 信息技术发展/06 数据库系统.md",
+    "02 信息技术发展/05 数据结构模型.md",
+    "02 信息技术发展/04 计算机存储.md",
+    "02 信息技术发展/04 计算机存储 1.md",
+    "02 信息技术发展/14 虚拟现实.md",
+    "02 信息技术发展/13 人工智能.md",
+    "05 信息系统工程"
+  ]
+}

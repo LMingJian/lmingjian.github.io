@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "59343159dba5e534",
+        "id": "8136e77ad00408c6",
         "type": "tabs",
         "children": [
           {
-            "id": "101b5556bacbe13a",
+            "id": "1a3f5c80d83cbae0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -75,27 +75,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "templates:插入模板": false
     }
   },
-  "active": "101b5556bacbe13a",
+  "active": "1a3f5c80d83cbae0",
   "lastOpenFiles": [
-    "06 软件工程基础知识/08 软件项目管理.md",
-    "09 其他/专业英语.md",
-    "09 其他/其他考点.md",
-    "09 其他/考试大纲.md",
-    "09 其他/_index.md",
     "08 软件测试技术应用/05 分布式架构软件测试.md",
     "08 软件测试技术应用/04 微内核架构软件测试.md",
     "08 软件测试技术应用/03 事件驱动架构软件测试.md",
     "08 软件测试技术应用/02 分层架构软件测试.md",
     "08 软件测试技术应用/01 软件测试过程与管理.md",
     "08 软件测试技术应用/_index.md",
+    "09 其他/专业英语.md",
+    "09 其他/其他考点.md",
+    "09 其他/考试大纲.md",
+    "09 其他/_index.md",
+    "06 软件工程基础知识/08 软件项目管理.md",
     "07 软件测试基础知识/12 软件测试新技术.md",
     "07 软件测试基础知识/11 基于风险的测试技术.md",
     "07 软件测试基础知识/10 基于自动化的测试技术.md",

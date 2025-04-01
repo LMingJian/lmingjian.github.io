@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"90e94735e25d17c5","x":-280,"y":-360,"width":435,"height":201,"color":"4","type":"text","text":"# 信息安全\n\n 国际标准化组织 ISO 定义，信息安全是指数据处理系统建立和采用的技术、管理上的安全保护，为的是保护计算机硬件、软件、数据不因偶然和恶意的原因而遭到破坏、更改和泄露。\n"},
+		{"id":"61cb09159c91bdb7","x":-266,"y":-78,"width":408,"height":278,"color":"3","type":"text","text":"# 网络安全技术\n\n- 防火墙\n- 入侵检测与防护\n- VPN\n- 安全扫描\n- 网络蜜罐技术\n- 用户和实体行为分析技术 UEBA"},
+		{"id":"d071c52ae1dfce43","x":300,"y":-368,"width":309,"height":217,"color":"5","type":"text","text":"# 信息安全的层次\n\n- 设备安全\n- 数据安全\n- 内容安全\n- 行为安全"},
+		{"id":"87a5ecca4fe0bcc2","x":300,"y":-78,"width":367,"height":255,"color":"6","type":"text","text":"# 信息系统安全的内容\n\n- 计算机设备安全\n- 网络安全\n- 操作系统安全\n- 数据库系统安全\n- 应用系统安全"},
+		{"id":"b3f9c487453374ee","x":300,"y":320,"width":581,"height":364,"color":"3","type":"text","text":"# 网络安全态势感知\n\n网络安全态势感知（Network Security Situation Awareness）是在大规模网络环境中，对能够引起网络态势发生变化的安全要素进行获取、理解、显示，并据此预测未来的一种网络安全发展趋势。\n\n网络安全态势感知不仅是一种安全技术，也是一种新兴的安全概念，同时是一种基于环境的、动态的、整体的洞悉安全风险的能力。\n\n网络安全态势感知的前提是安全大数据，其在安全大数据的基础上进行数据整合、特征提取等，然后应用一系列态势评估算法生成网络的整体态势状况，应用态势预测算法预测态势的发展状况，并使用数据可视化技术，将态势状况和预测情况进行展示。"},
+		{"id":"ab1d38485227259b","x":370,"y":760,"width":441,"height":240,"color":"3","type":"text","text":"# 网络安全态势感知的技术\n\n- 海量多元异构数据的汇聚融合技术、\n- 面向多类型 的网络安全威胁评估技术、\n- 网络安全态势评估与决策支撑技术、\n- 网络安全态势可视化、"},
+		{"id":"1c9044ce682b0c06","x":-354,"y":286,"width":583,"height":474,"color":"3","type":"text","text":"# 用户和实体行为分析 UEBA\n\n用户和实体行为分析（User and Entity Behavior Analytics，UEBA）是一种基于用户画像进行异常检测的安全技术。\n\n传统安全产品、技术、方案基本上都是基于已知特征进行规则匹配来进行分析和检测。这种技术存在安全可见性盲区，有滞后效应、无力检测未知攻击、容易被绕过，以及难以适应攻防对抗的网络现实和快速变化的组织环境、外部威胁等问题。\n\n用户和实体行为分析提供了用户画像及基于各种分析方法的异常检测，结合基本分析方法（利用签名的规则、模式匹配、简单统计、阈值等）和高级分析方法（监督和无监督的机器学习等），发现与用户或实体标准画像或行为异常的活动所相关的潜在事件。\n\nUEBA 以用户和实体为对象，利用大数据，结合规则以及机器学习模型，对用户和实体行为进行分析和异常检测，快速地感知内部用户和实体的可疑或非法行为。"},
+		{"id":"4524a80272eb7090","x":-283,"y":800,"width":441,"height":200,"color":"3","type":"text","text":"# 用户和实体行为分析的架构\n\n- 数据获取层\n- 算法分析层\n- 场景应用层"},
+		{"id":"a70d794852eca4bb","x":-878,"y":114,"width":450,"height":172,"color":"3","type":"text","text":"# 加密\n\n加密，是以某种特殊的算法改变原有的信息数据，使得未授权的用户即使获得了已加密的信息，但因不知解密的方法，仍然无法了解信息的内容。"},
+		{"id":"0f0b7c31f24b55c2","x":-1232,"y":128,"width":312,"height":144,"color":"3","type":"text","text":"# 加密的基本元素\n\n- 算法\n- 密钥"},
+		{"id":"15a4539d958c06f2","x":-872,"y":363,"width":438,"height":288,"color":"3","type":"text","text":"# 加密的分类\n\n- **对称加密**：\n    - 以 DES 算法为代表，加密密钥和解密密钥相同。\n- **非对称加密**：\n    - 以 RSA 算法为代表，加密密钥和解密密钥不同，加密密钥可以公开而解密密钥需要保密。"},
+		{"id":"cbf7262033dc84e6","x":-866,"y":-328,"width":438,"height":338,"color":"2","type":"text","text":"# 信息的安全属性\n\n- **保密性**：\n    - 信息不被未授权者知晓的属性。\n- **完整性**：\n    - 信息是正确的、真实的、未被篡改的、完整无缺的属性。\n- **可用性**：\n    - 信息可以随时正常使用的属性。\n\nPS：这同样是数据的安全属性"},
+		{"id":"0707fe7e4b9b7d6e","x":-1200,"y":-270,"width":280,"height":280,"color":"1","type":"text","text":"# 信息的安全问题\n\n- 计算机病毒泛滥\n- 恶意软件的入侵\n- 黑客攻击\n- 利用计算机犯罪\n- 网络有害信息泛滥\n- 个人隐私泄露\n"}
+	],
+	"edges":[
+		{"id":"e1533ac9180fc0b9","fromNode":"90e94735e25d17c5","fromSide":"left","toNode":"0707fe7e4b9b7d6e","toSide":"right"},
+		{"id":"6d81a1631af0ff30","fromNode":"90e94735e25d17c5","fromSide":"left","toNode":"cbf7262033dc84e6","toSide":"right"},
+		{"id":"d8337a3d99ce6b75","fromNode":"90e94735e25d17c5","fromSide":"right","toNode":"d071c52ae1dfce43","toSide":"left"},
+		{"id":"a1be7edbf636620e","fromNode":"90e94735e25d17c5","fromSide":"right","toNode":"87a5ecca4fe0bcc2","toSide":"left"},
+		{"id":"a8dd577ee6b4b194","fromNode":"90e94735e25d17c5","fromSide":"bottom","toNode":"61cb09159c91bdb7","toSide":"top"},
+		{"id":"977fc2a131bc62fb","fromNode":"a70d794852eca4bb","fromSide":"bottom","toNode":"15a4539d958c06f2","toSide":"top"},
+		{"id":"ea5f340c8df05277","fromNode":"61cb09159c91bdb7","fromSide":"left","toNode":"a70d794852eca4bb","toSide":"top"},
+		{"id":"6a8287f2db20a86f","fromNode":"61cb09159c91bdb7","fromSide":"bottom","toNode":"1c9044ce682b0c06","toSide":"top"},
+		{"id":"59a9c96eaccfcd2a","fromNode":"a70d794852eca4bb","fromSide":"left","toNode":"0f0b7c31f24b55c2","toSide":"right"},
+		{"id":"c9872c3748ee2982","fromNode":"1c9044ce682b0c06","fromSide":"bottom","toNode":"4524a80272eb7090","toSide":"top"},
+		{"id":"9f92d537eeae8a33","fromNode":"61cb09159c91bdb7","fromSide":"bottom","toNode":"b3f9c487453374ee","toSide":"top"},
+		{"id":"19e27559e26e3c76","fromNode":"b3f9c487453374ee","fromSide":"bottom","toNode":"ab1d38485227259b","toSide":"top"}
+	]
+}

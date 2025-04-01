@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"0ddc135fac37ed86","type":"text","text":"# 信息系统的架构\n\n- **管理层**：\n    - 监督系统的设计和结构，并监控其整体性能。\n- **信息系统层**：\n    - 将管理层制定的业务需求和业务战略实现。\n- **人员、技术、流程和数据层**：\n    - 将信息系统层实现的业务和系统策略实际完成。\n","x":180,"y":77,"width":523,"height":263,"color":"3"},
+		{"id":"f3a62ed0d56b79eb","type":"text","text":"# 信息系统的组成\n\n- 人员\n- 技术\n- 流程\n- 数据\n","x":-144,"y":101,"width":278,"height":213,"color":"2"},
+		{"id":"0f218d5d2cab687e","type":"text","text":"# 信息系统的定义\n\n信息系统是对信息进行采集、处理、存储、管理和检索，形成组织中的信息流动和处理， 必要时能向有关人员提供有用信息的系统。\n\n信息系统是由人、技术、流程和数据资源组成的人机系统， 目的是及时、正确地收集、加工、存储、传递和提供信息， 以实现组织中各项活动的管理、调节和控制。\n\n信息系统是为组织用来生产和管理信息的技术、人员和过程的组合。","x":-285,"y":-320,"width":560,"height":288,"color":"4"},
+		{"id":"dd2b965dd9f8270c","type":"text","text":"# 信息系统的矛盾性\n\n信息技术及其系统在本质上都具有矛盾性，一方面具备**前瞻性**，充满潜力的创新。另一方面则是主要**漏洞**（网络安全、数字化和隐私丧失等）的载体。","x":400,"y":-260,"width":420,"height":169,"color":"1"},
+		{"id":"2f81c7ea8df0223a","type":"text","text":"# 信息系统架构模型\n\n![](_images_local/Pasted%20image%2020250123111624.png)\n","x":780,"y":29,"width":360,"height":359,"color":"3"}
+	],
+	"edges":[
+		{"id":"dd4550887cc86939","fromNode":"0f218d5d2cab687e","fromSide":"bottom","toNode":"f3a62ed0d56b79eb","toSide":"top"},
+		{"id":"6eaa34cdbd531199","fromNode":"0f218d5d2cab687e","fromSide":"bottom","toNode":"0ddc135fac37ed86","toSide":"top"},
+		{"id":"85f0c9ec2c9ae8f1","fromNode":"0ddc135fac37ed86","fromSide":"right","toNode":"2f81c7ea8df0223a","toSide":"left"},
+		{"id":"2f88c599b6a153d3","fromNode":"0f218d5d2cab687e","fromSide":"right","toNode":"dd2b965dd9f8270c","toSide":"left"}
+	]
+}

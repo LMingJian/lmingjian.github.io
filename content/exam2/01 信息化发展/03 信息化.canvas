@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"7f8ccd45d6626e09","type":"text","text":"# 信息化的定义\n\n信息化是指在国家宏观信息政策指导下，通过信息技术开发、信息产业的发展、信息人才的配置，最大限度地利用信息资源满足全社会信息需求，加速社会各个领域发展，以推进信息社会发展的过程。\n\n信息化是指培养、 发展以计算机为主的智能化工具为代表的新生产力（信息化生产力），并使之造福于社会的历史过程。\n\n信息化是以现代通信、网络、数据库技术为基础， 将所研究对象各要素汇总至数据库，供特定人群生活、工作、学习、辅助决策，是和人类息息相关的各种行为相结合的一种技术。\n\n信息化可以极大地提高行为的效率，并且可以降低成本，为推动社会进步提供技术支持。\n\n信息化的发展水平代表一个国家的信息能力，信息产业成为国家核心竞争力的新战略高地，信息技术成为国家间竞争的核心聚焦，数字经济、 数字人才成为区域经济与社会发展的重要支点。\n\n信息化代表了一种信息技术被高度应用，信息资源被高度共享，从而使得人的智能潜力以及社会物质资源潜力被充分发挥，个人行为、组织决策和社会运行趋于合理化的理想状态。","x":-720,"y":-533,"width":660,"height":566,"color":"4"},
+		{"id":"bdfc2731d55e71a6","type":"text","text":"# 信息化社会\n\n信息技术应用到一定程度后达成的社会形态，它只有充分应用信息技术才能达成。","x":-560,"y":209,"width":340,"height":161,"color":"6"},
+		{"id":"415fb820a2e72193","type":"text","text":"# 企业信息化\n\n在企业中应用信息技术，通过深入应用信息技术，促进企业的业务模式、组织架构乃至经营战略发生革新或转变。","x":-940,"y":209,"width":340,"height":161,"color":"6"},
+		{"id":"086e25fdc9444e88","type":"text","text":"# 国家信息化的体系\n\n- 信息技术应用\n- 信息资源\n- 信息网络\n- 信息技术和产业\n- 信息化人才\n- 信息化政策法规和标准规范 ","x":-199,"y":495,"width":391,"height":261,"color":"6"},
+		{"id":"699b3cecd2980816","type":"text","text":"# 信息化的内涵\n\n- 信息网络体系\n- 信息产业基础\n- 社会运行环境\n- 效用积累过程\n","x":232,"y":-355,"width":260,"height":210,"color":"2"},
+		{"id":"402edd998a275637","type":"text","text":"信息网络体系包括信息资源、各种信息系统、公用通信网络平台等内容。","x":664,"y":-419,"width":580,"height":64,"color":"2"},
+		{"id":"c61e6187425fe98c","type":"text","text":"信息产业基础包括信息科学技术研究与开发、信息装备制造、信息咨询服务等内容。","x":663,"y":-322,"width":581,"height":72,"color":"2"},
+		{"id":"1fe3d69542d8e824","type":"text","text":"社会运行环境包括现代工农业、管理体制、政策法律、规章制度、文化教育、道德观念等生产关系与上层建筑。","x":663,"y":-208,"width":580,"height":63,"color":"2"},
+		{"id":"eab697f66de9cc9b","type":"text","text":"效用积累过程包括劳动者素质、国家现代化水平和人民生活质量的不断提高，精神文明和物质文明建设不断进步等。","x":663,"y":-108,"width":580,"height":84,"color":"2"},
+		{"id":"82877308a7544398","type":"text","text":"# 信息化的核心\n\n信息化的核心是要通过全体社会成员的共同努力，在经济和社会各个领域充分应用基于信息技术的先进社会生产工具（表现为各种信息系统或软硬件产品），提高信息时代的社会生产力，并推动生产关系和上层建筑的改革（表现为法律、法规、制度、规范、标准、组织结构等）。","x":240,"y":-680,"width":480,"height":220,"color":"1"},
+		{"id":"9e255d2314cf0594","type":"text","text":"# 信息化的趋势\n\n- 组织信息化趋势\n- 产品信息化趋势\n- 产业信息化趋势\n- 社会生活信息化趋势\n- 国民经济信息化趋势\n","x":232,"y":-16,"width":343,"height":248,"color":"3"},
+		{"id":"6d6b14f2211a30b1","type":"text","text":"各行业领域组织的信息化是国家经济与社会信息化的基础，特指组织在产品的设计、 开发、 生产、管理、经营等多个环节中广泛利用信息技术，并大力培养信息人才，完善信息服务，加速建设组织信息系统。","x":894,"y":12,"width":698,"height":115,"color":"3"},
+		{"id":"9c5dd030a48a188d","type":"text","text":"产品中各类信息比重日益增大、物质比重日益降低，产品具有越来越强的信息处理功能。","x":894,"y":148,"width":698,"height":64,"color":"3"},
+		{"id":"e1971fff2d625c44","type":"text","text":"农业、 工业、服务业等传统产业广泛利用信息技术，大力开发和利用信息资源，建立各种类型的产业互联网平台和网络，实现产业的升级。","x":894,"y":232,"width":698,"height":80,"color":"3"},
+		{"id":"5e40f27efbd8e67c","type":"text","text":"市场、科技、教育、政务、日常生活等在内的整个社会体系采用先进的信息技术，建立各种互联网平台和网络。","x":894,"y":332,"width":698,"height":80,"color":"3"},
+		{"id":"f23f8b119715f908","type":"text","text":"在经济大系统内实现统一的信息大流动， 使金融、 贸易、投资、计划、营销等组成一个信息大系统，生产、流通、分配、消费等经济的四个环节通过信息进一步连成一个整体。国民经济信息化是世界各国急需实现的目标。","x":894,"y":432,"width":698,"height":97,"color":"3"},
+		{"id":"28c510dc9251b5a0","type":"text","text":"# 国家信息化\n\n在国家统一规划和组织下，在农业、工业、科学技术、国防及社会生活各个方面应用信息技术，深入开发并广泛利用信息资源，加速实现国家现代化进程。","x":-184,"y":209,"width":362,"height":190,"color":"6"},
+		{"id":"1bc29544a615cf3f","type":"text","text":"# 国家信息化的趋势\n\n《“十四五”国家信息化规划》明确建设：\n\n- 数字基础设施体系，\n- 数据要素资源体系，\n- 创新发展体系，\n- 数字产业体系，\n- 数字化转型发展体系，\n- 数字社会治理体系，\n- 数字政府服务体系，\n- 数字民生保障体系，\n- 数字领域国际合作体系，\n- 数字化发展治理体系，","x":228,"y":336,"width":504,"height":420,"color":"6"}
+	],
+	"edges":[
+		{"id":"6abd4f5a795947f9","fromNode":"699b3cecd2980816","fromSide":"right","toNode":"402edd998a275637","toSide":"left"},
+		{"id":"9227a2e844c9c824","fromNode":"699b3cecd2980816","fromSide":"right","toNode":"c61e6187425fe98c","toSide":"left"},
+		{"id":"c86e9238615d4fda","fromNode":"699b3cecd2980816","fromSide":"right","toNode":"1fe3d69542d8e824","toSide":"left"},
+		{"id":"de63f37cbf3b1e89","fromNode":"699b3cecd2980816","fromSide":"right","toNode":"eab697f66de9cc9b","toSide":"left"},
+		{"id":"29a2c0a603a3db5f","fromNode":"7f8ccd45d6626e09","fromSide":"right","toNode":"82877308a7544398","toSide":"left"},
+		{"id":"45ab486b9e8a0087","fromNode":"7f8ccd45d6626e09","fromSide":"right","toNode":"699b3cecd2980816","toSide":"left"},
+		{"id":"bb7b990dbd5fe7aa","fromNode":"7f8ccd45d6626e09","fromSide":"right","toNode":"9e255d2314cf0594","toSide":"left"},
+		{"id":"53b7e43504f060b2","fromNode":"9e255d2314cf0594","fromSide":"right","toNode":"6d6b14f2211a30b1","toSide":"left"},
+		{"id":"981d5e8d61087897","fromNode":"9e255d2314cf0594","fromSide":"right","toNode":"9c5dd030a48a188d","toSide":"left"},
+		{"id":"7bdfc69bbdd1261f","fromNode":"9e255d2314cf0594","fromSide":"right","toNode":"e1971fff2d625c44","toSide":"left"},
+		{"id":"30d97b6318f2c9d2","fromNode":"9e255d2314cf0594","fromSide":"right","toNode":"5e40f27efbd8e67c","toSide":"left"},
+		{"id":"d020fa25b9adef1d","fromNode":"9e255d2314cf0594","fromSide":"right","toNode":"f23f8b119715f908","toSide":"left"},
+		{"id":"418f3ac46d17cc43","fromNode":"7f8ccd45d6626e09","fromSide":"bottom","toNode":"415fb820a2e72193","toSide":"top"},
+		{"id":"b494a665099d0270","fromNode":"7f8ccd45d6626e09","fromSide":"bottom","toNode":"bdfc2731d55e71a6","toSide":"top"},
+		{"id":"8f199761f38cf28c","fromNode":"7f8ccd45d6626e09","fromSide":"bottom","toNode":"28c510dc9251b5a0","toSide":"top"},
+		{"id":"24163ff00563a521","fromNode":"28c510dc9251b5a0","fromSide":"bottom","toNode":"086e25fdc9444e88","toSide":"top"},
+		{"id":"df2b71deb48b5124","fromNode":"28c510dc9251b5a0","fromSide":"right","toNode":"1bc29544a615cf3f","toSide":"top"}
+	]
+}
