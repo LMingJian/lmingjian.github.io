@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "58d2c2ef90198f86",
+        "id": "762c256342e5d1d1",
         "type": "tabs",
         "children": [
           {
-            "id": "cd7c4f86c5d5040e",
+            "id": "7045e71fce6911d1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,10 +36,27 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
+            }
+          },
+          {
+            "id": "f7a5226bff77cdfc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           }
         ]
@@ -79,54 +96,54 @@
       "canvas:新建白板": false
     }
   },
-  "active": "dbf27dbd6fdcdecd",
+  "active": "7045e71fce6911d1",
   "lastOpenFiles": [
-    "随记/如何测试小程序.md",
-    "Windows/如何使用 Windows 自带的远程桌面.md",
+    "随记/如何快速计算当前年月日是星期几.md",
+    "随记/树状数组.md",
+    "Pasted image 20250511155656.png",
+    "随记/如何解决 IPTV 和宽带单线复用的问题.md",
+    "随记/修复 mysqldump 导出中文乱码的问题.md",
+    "随记/如何关闭 Chrome 的系统升级横幅.md",
+    "随记/如何使用 Everything 分析和清理 C 盘.md",
     "随记/二叉树的度和遍历方式.md",
-    "_images/drawingbed/img/202504011551454.png",
-    "_images/drawingbed/img/202504011549323.png",
-    "_images/drawingbed/img/202504011545882.png",
-    "(/_images/drawingbed/img/202504011551454.png.md",
+    "随记/如何测试小程序.md",
+    "随记/主流的前端直播方案.md",
+    "_images/drawingbed/img/202505111129997.png",
+    "_images/drawingbed/img/202505111117530.png",
+    "_images/drawingbed/img/202505111049464.png",
+    "_images/drawingbed/img/202505111048228.png",
+    "_images/drawingbed/img/202505111041415.png",
+    "_images/drawingbed/img/202505111030856.png",
+    "_images/drawingbed/img/202505111027166.png",
+    "_images/drawingbed/img/202505111020485.png",
+    "随记/音视频的相关技术.md",
+    "随记/Cloudflare 的人机验证流程.md",
+    "随记/Google 软件测试之道 (1).md",
+    "随记/Google 软件测试之道 (3).md",
+    "随记/修复 Remote Ripple 缺少 .Net 框架的问题.md",
+    "随记/如何解决 flv.js 的延迟累积问题.md",
+    "Pasted image 20250511104926.png",
+    "随记/如何估算视频的直播流量.md",
+    "随记/如何将两个路由器设置成同一网段.md",
+    "随记/如何使用 Gitee+PicGo 搭建图床.md",
+    "随记/如何设置 OWASP ZAP 的请求头.md",
+    "随记/如何给 Hugo 博客添加搜索功能.md",
+    "随记/如何查看 Iconfont 字体文件.md",
+    "随记/如何安装 CUDA 并使用 PyTroch.md",
+    "随记/海康摄像机的 RTSP 地址格式.md",
+    "随记/常用的树形结构存储算法.md",
+    "随记/常见的排序算法.md",
+    "未命名.canvas",
     "(/_images/drawingbed/img",
     "(/_images/drawingbed",
     "(/_images",
     "(",
-    "_index.md",
-    "Windows/修复 Windows 下 Python 环境变量不生效的问题.md",
-    "Windows/修复 Windows 10 锁屏丢失的问题.md",
-    "Windows/如何在 Windows 中移除“应用和功能”中的应用名称.md",
-    "Windows/如何在 Windows 中批量移动文件.md",
-    "Windows/如何在 Windows 中检查端口占用情况.md",
-    "Windows/如何修改 Windows 的右键菜单项.md",
-    "_images/drawingbed/img/202212061940070.png",
-    "Zabbix/Zabbix Agent 的部署.md",
-    "Zabbix/Zabbix Server 的 Docker 部署.md",
-    "Zabbix/Zabbix 的组成.md",
-    "Zabbix/Zabbix 的监控模式.md",
-    "Pasted image 20250401154802.png",
-    "Linux/Linux Shell 的特殊变量.md",
-    "Hugging Face 模型下载.md",
     "未命名",
-    "Docker/如何修改 Docker 的镜像源.md",
-    "Docker/如何修改 Docker 容器的端口映射.md",
-    "Docker/Docker 的网络原理.md",
-    "Docker/通过 yum 安装 Docker.md",
-    "Docker/如何让 Docker 容器在后台运行.md",
-    "Docker/如何管理 Dokcer 容器.md",
-    "Docker/如何管理 Dokcer 服务.md",
-    "Docker/如何管理 Docker 镜像.md",
-    "Docker/如何管理 Docker 的网络.md",
     "Work.canvas",
     "FFmpeg",
     "随记",
     "新建文件夹",
     "Flutter",
-    "_images/drawingbed/img/202204291754285.png",
-    "_images/drawingbed/img/202204291755738.png",
-    "images/drawingbed/img",
-    "_images/drawingbed/img/202412051055967.png",
-    "_images/drawingbed/img/202412051055649.png",
-    "_images/drawingbed/img/202412051055524.png"
+    "images/drawingbed/img"
   ]
 }
