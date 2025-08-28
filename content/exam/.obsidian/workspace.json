@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "aef9de9a1058f8d7",
+        "id": "34144c3018ac933a",
         "type": "tabs",
         "children": [
           {
-            "id": "cd30935a34790bae",
+            "id": "ef81a2e47648323b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -75,13 +75,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "templates:插入模板": false
     }
   },
-  "active": "22c7b5a3b15cc98d",
+  "active": "ef81a2e47648323b",
   "lastOpenFiles": [
     "01 计算机系统基础知识/03 数据库基础知识.md",
     "01 计算机系统基础知识/01 计算机系统构成及硬件基础知识.md",
+    "01 计算机系统基础知识/02 操作系统基础知识.md",
     "01 计算机系统基础知识/_index.md",
     "_images/vendor",
     "_images/drawingbed/img/202508281033973.png",
@@ -120,7 +122,6 @@
     "07 软件测试基础知识/10 基于自动化的测试技术.md",
     "07 软件测试基础知识/09 基于质量特性的测试.md",
     "07 软件测试基础知识/08 基于经验的测试技术.md",
-    "07 软件测试基础知识/07 基于结构的测试技术.md",
     "_template",
     "09 其他",
     "08 软件测试技术应用",
