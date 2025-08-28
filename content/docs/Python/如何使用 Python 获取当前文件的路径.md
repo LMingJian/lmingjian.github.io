@@ -8,41 +8,48 @@ author: LiangMingJian
 
 在脚本中获取当前文件的路径。
 
-# 通过`sys.path[0]`获取当前工作目录路径
-
-该方法返回的是绝对路径。
-
-```python
-import sys
-print(sys.path[0])
-# >>> F:\Project
-```
-
 # 通过`__file__`获取文件路径
 
-该方法的返回由系统决定是否是文件全名。
+`__file__` 根据文件的加载方式，有可能输出的是相对路径，也有可能输出绝对路径。因此建议在使用时统一利用 `os.path` 进行格式化。（这在 Linux 系统上应当注意）
 
 ```python
-print(__file__)
-# >>> F:\Project\example.py
+import os 
+
+current_file_path = os.path.abspath(__file__) 
+current_dir_path = os.path.dirname(__file__) 
+
+print(current_file_path) 
+print(current_dir_path)
+
+"""
+>>> F:\Project\example.py
+>>> F:\Project
+"""
 ```
 
-# 通过`os.path.abspath(__file__)`获取文件路径
+# 使用 `sys.argv[0]` 获取
 
-该方法返回的是绝对路径。
+`sys.argv` 是 Python 中一个特别的内置列表，它用来获取命令行参数，即通过命令行调用脚本时传入的参数列表，比如：`-h`，`-v`，`-a`。
+
+`sys.argv` 遵循顺序：
+
+- Python 脚本的全称
+- 用户输入的参数
+
+显然，通过读取列表第一个值，我们可以间接获取到当前文件的路径。
 
 ```python
 import os
-print(os.path.abspath(__file__))
-# >>> F:\Project\example.py
-```
+import sys
 
-# 通过`os.path.split(os.path.realpath(__file__))`获取文件路径
+current_file_path = os.path.abspath(sys.argv[0])
+current_dir_path = os.path.dirname(sys.argv[0])
 
-该方法会将文件路径分成头和尾一对（文件目录，文件名），并生成二元元组返回。
+print(current_file_path)
+print(current_dir_path)
 
-```python
-import os
-print(os.path.split(os.path.realpath(__file__)))
-# >>> ('F:\\Project', 'example.py')
+"""
+>>> F:\Project\example.py
+>>> F:\Project
+"""
 ```

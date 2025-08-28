@@ -27,3 +27,14 @@ Module，模块，本质上就是一个编写好的 Python 文件。用户可以
 `from module_name import function_name [as alias]`，从一个模块或模块包中导入一个函数或类，能直接使用该导入的函数或类，不需要使用点式。
 
 `from module_name import *`，从一个模块或模块包中导入所有函数或类。这里隐式使用了`__all__`变量，`__all__`默认关联一个模块列表，当执行`from ... import *`时，程序会导入列表中所有模块。但需要注意的是，如果`*`中的包含模块，那么该模块中的子模块将不会被导入。
+
+
+sys.path 遵循顺序：
+
+- 当前脚本所在目录
+    
+- 环境变量 PYTHONPATH 中的路径
+    
+- Python 标准库路径
+    
+- 第三方库安装路径 site-packages

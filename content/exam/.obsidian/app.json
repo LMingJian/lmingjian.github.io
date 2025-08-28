@@ -1,4 +1,16 @@
 {
   "livePreview": false,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "defaultViewMode": "preview",
+  "strictLineBreaks": true,
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "_images/drawingbed/img",
+  "userIgnoreFilters": [
+    "_hello/",
+    "_images/",
+    "_template/"
+  ]
 }
