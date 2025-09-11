@@ -13,9 +13,9 @@ Python 中用户使用 Requests 库发送 Http 请求时，请求的所有参数
 用户可以将参数提前进行编码传递，以避免 Requests 库对参数的编码。
 
 ```python
-payload1 = '{ABC}'
+payload = '{ABC}'
 # String
-data = payload1.encode('utf-8')
+data = payload.encode('utf-8')
 # b'{ABC}' 转换后的 UTF-8 编码
 response = requests.request("POST", url, data=data)
 ```

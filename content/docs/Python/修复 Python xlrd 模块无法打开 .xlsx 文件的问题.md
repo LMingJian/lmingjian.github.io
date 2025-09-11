@@ -10,9 +10,11 @@ xlrd 模块更新后，无法打开 .xlsx 文件，报错 `xlrd.biffh.XLRDError:
 
 # Resolution
 
-xlrd 在更新到了 2.0.1 版本后只支持 .xls 文件，若要打开 .xlsx 文件需要安装旧版 xlrd，执行。
+xlrd 模块在更新到了 2.0.1 版本后只支持 .xls 文件，若要打开 .xlsx 文件需要安装旧版 xlrd 或换用 pandas 模块。
 
 ```python
 pip uninstall xlrd
 pip install xlrd==1.2.0
+
+pip install pandas
 ```
