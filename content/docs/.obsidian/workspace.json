@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3fed9ba447beb652",
+        "id": "75752488ede7487c",
         "type": "tabs",
         "children": [
           {
-            "id": "7769e38265e24fea",
+            "id": "c7b5a663a2ce95ea",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -96,16 +96,16 @@
       "canvas:新建白板": false
     }
   },
-  "active": "dbf27dbd6fdcdecd",
+  "active": "c7b5a663a2ce95ea",
   "lastOpenFiles": [
-    "Python/zPython 基于进程的并行 multiprocessing.md",
+    "Python/Python 基于进程的并行 multiprocessing.md",
+    "Python/Python 基于线程的并行 threading.md",
     "Python/Python 的面向对象编程.md",
     "Docker/如何管理 Docker 镜像.md",
     "Docker/如何导出 Docker 镜像.md",
     "Python/Python 的枚举类 Enum.md",
     "Python/如何使用 Python 执行系统终端的指令.md",
     "Python/Python Package：zipfile.md",
-    "Python/zPython 基于线程的并行 threading.md",
     "Python/Python Package：datetime.md",
     "Python/Python Package：time.md",
     "Python/zpip install Exscript.md",
