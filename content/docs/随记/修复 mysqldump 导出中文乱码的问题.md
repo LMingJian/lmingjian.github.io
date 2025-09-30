@@ -6,24 +6,32 @@ author: LiangMingJian
 
 # BUG 描述
 
-在 windows powershell 中使用 `mysqldump -h 127.0.0.1 --default-character-set=utf8 -uroot -proot xxx > xxx.sql` 导出数据库时，导出的文件打开查看会看到中文乱码的问题，如果查看编码，会发现编码是 UTF16，而不是 UTF8。
+在 Windows 终端备份 Mysql 数据库时，使用到以下命令进行：
 
-# Resolution
-
-这个问题的出现不是因为 mysqldump 的异常，而是 windows powershell 的问题。
-
-Windows PowerShell 输出重定向命令 `>` 的文件编码默认是 UTF-16 (LE)。因此，如果我们使用上述命令备份数据库，会因为重定向，导致中文的编码异常。
-
-> Note A dump made using PowerShell on Windows with output [redirection](https://zhida.zhihu.com/search?content_id=195143047&content_type=Article&match_order=1&q=redirection&zhida_source=entity) creates a file that has UTF-16 encoding:  
-> 
-> mysqldump [options] > dump.sql  
-> 
-> However, UTF-16 is not permitted as a connection character set (see Impermissible Client Character Sets), so the dump file cannot be loaded correctly. To work around this issue, use the --result-file option, which creates the output in ASCII format:  
-> 
-> mysqldump [options] --result-file=dump.sql
-
-根据 Mysql 官网的上述解释，可以使用 `--result-file` 来指定导出文件，而不是使用输出重定向。
-
+```shell
+mysqldump -h 127.0.0.1 --default-character-set=utf8 -uroot -p123456 xxx > xxx.sql
 ```
+
+在成功执行命令后，该导出的 sql 文件没办法执行，即无法重新导入会 Mysql 数据库。
+
+此时，打开导出的文件，我们会看到中文乱码的问题。使用 VSCode 打开 sql 文件，可以查看到右下角的编码格式 UTF16，而不是设置的 UTF8。
+
+# BUG 解决
+
+这个问题 mysqldump 的错，而是 Windows powershell 的错。
+
+Windows PowerShell 输出重定向命令 > 的文件编码默认是 UTF-16。
+
+因此，即使我们在 mysqldump 命令中指定了 UTF-8 编码格式，但其作用范围也只去到该命令的执行完成。在重定向输出时，Windows PowerShell 会自动的将 mysqldump 命令的 UTF-8 结果转换成 UTF-16 格式输出，最终导致编码异常，乱码。
+
+如何解决？
+
+在官网文档中，Mysql 给出了解决方案，即通过 `--result-file` 指定输出文件，而不应该使用重定向输出。
+
+```shell
 mysqldump -h 127.0.0.1 --default-character-set=utf8 --result-file=D:\xxx.sql -uroot -proot xxx
 ```
+
+![](_images/drawingbed/img/Pasted%20image%2020250916190642.png)
+
+> [ mysqldump — A Database Backup Program ](https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html)
