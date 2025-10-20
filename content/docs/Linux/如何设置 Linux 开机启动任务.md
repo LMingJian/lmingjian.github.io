@@ -4,67 +4,103 @@ date: 2024-12-25T13:55:27+08:00
 author: LiangMingJian
 ---
 
-# Linux 系统文件启动顺序
+# 需求
 
-系统启动时按顺序加载以下的配置文件，要设置开机启动任务即修改以下部分文件。
+在 Linux 运维时，往往编写了一些 Shell 脚本，这些脚本中，有些我们希望在 Linux 系统开机后自动运行，实现自动维护，此时如何实现开机自启就成了问题。
 
-```bash
-/etc/profile
-/root/.bash_profile
-/etc/bashrc
-/root/.bashrc
-/etc/profile.d/*.sh
-/etc/profile.d/lang.sh
-/etc/sysconfig/i18n
-/etc/rc.local (/etc/rc.d/rc.local)
-```
+# 使用 /etc/rc.d/rc.local 文件
 
-# 修改 /etc/rc.local 或 /etc/rc.d/rc.local
+**这是最简单粗暴的方法**。
+
+`/etc/rc.d/rc.local` 是 Linux 系统开机启动任务文件 `/etc/rc.local` 的软链接，其作用是在系统启动的最后阶段执行用户自定义命令或脚本。
+
+**特别注意，`/etc/rc.d/rc.local` 要生效，则必须在配置后需要手动添加可执行权限，让脚本允许被运行**。
 
 ```bash
-# 1.编辑 rc.local 文件
-vi /etc/rc.local
- 
-# 2.修改 rc.local 文件，在 exit 0 前面加入需要执行命令。保存并退出。
-/etc/init.d/mysqld start        # mysql 开机启动
-/etc/init.d/nginx start         # nginx 开机启动
-/bin/bash /test.sh >/dev/null 2>/dev/null  # test 脚本开机执行
- 
-# 3.最后修改 rc.local 文件的执行权限
-chmod +x /etc/rc.local
-chmod 755 /etc/rc.local
+vi /etc/rc.d/rc.local
+chmod +x /etc/rc.d/rc.local
 ```
 
-# 将脚本放到 /etc/profile.d/ 下
+![](_images/drawingbed/img/Pasted%20image%2020251017092139.png)
 
-Linux 系统启动后，会检查 `/etc/profile.d/`  目录下所有脚本，并依次自动执行。
+# 使用 systemd 服务
 
-# 通过 chkconfig 命令设置
+通过将目标脚本创建为系统服务，实现更精细化的开机启动控制。
+
+**1.创建服务文件**
+
+在系统目录 `/etc/systemd/system/` 中创建一个 `start.service` 的服务。
 
 ```bash
-# 1.将(脚本)启动文件移动到 /etc/init.d/ 或者 /etc/rc.d/init.d/ 目录下。（前者是后者的软连接）
-# test.sh 文件前 3 行必须写入以下内容，分别告知系统使用的命令，运行级别，描述
-# 【#!/bin/sh】【#chkconfig: 35 20 80】【#description: http server】
-mv /www/wwwroot/test.sh /etc/rc.d/init.d
- 
-# 3.增加脚本的可执行权限
-chmod +x /etc/rc.d/init.d/test.sh
- 
-# 4.添加脚本到开机自动启动项目中。添加到chkconfig，开机自启动。
-cd /etc/rc.d/init.d
-chkconfig --add test.sh
-chkconfig test.sh on
- 
-# 5.关闭开机启动 
-chkconfig test.sh off
- 
-# 6.从 chkconfig 管理中删除 test.sh
-chkconfig --del test.sh
- 
-# 7.查看chkconfig管理
-chkconfig --list test.sh
+cd /etc/systemd/system/
+vi mystart.service
 ```
 
-{{< details "参考文件" >}} 
-1：[ Linux 添加开机启动方法(服务/脚本)  @jb51 ](https://www.jb51.net/article/176257.htm)
-{{< /details >}}
+在 `start.service` 服务文件中添加以下内容。
+
+```bash
+[Unit]
+# 服务描述
+Description=MyStartService
+# 依赖网络服务
+After=network.target
+
+[Service]
+# 启动命令
+ExecStart=/root/your_start_script.sh
+# 只在失败时重启
+Restart=on-failure
+# 重启间隔
+RestartSec=5s
+# 允许重启次数
+StartLimitBurst=10
+# 执行用户
+User=root
+
+[Install]
+# 多用户模式下启用
+WantedBy=multi-user.target
+```
+
+> 特别注意，执行脚本中必须添加 `#!/bin/bash` 头，以避免脚本无法识别。同时脚本中所有涉及路径的内容，应当使用绝对路径，如 `/root/data.txt`，以避免输出丢失。
+
+**2.启动服务并设置为开机自启**
+
+```bash
+systemctl start mystart.service
+systemctl status mystart.service
+systemctl enable mystart.service 
+```
+
+**3.删除服务**
+
+```bash
+# 停止并关闭自动启动
+systemctl stop mystart.service
+systemctl disable mystart.service
+
+# 删除对应的服务文件
+rm /etc/systemd/system/mystart.service
+
+# 检查服务是否还存在
+systemctl status mystart.service
+systemctl list-unit-files | grep mystart
+```
+
+# 使用 crontab 的 @reboot 功能
+
+crontab 是 Linux 系统中的定时任务系统，用户可以通过编辑该系统文件来实现定时任务的生效，开机自启任务的生效。
+
+**1.进入 cronta 系统的编辑模式**
+
+```bash
+crontab -e
+```
+
+**2.在文件中加入开机自启任务**
+
+```bash
+@reboot /root/your_script.sh
+```
+
+> 特别注意，所使用的脚本必须使用绝对路径。
