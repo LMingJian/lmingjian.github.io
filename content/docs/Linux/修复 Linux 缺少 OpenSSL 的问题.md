@@ -4,9 +4,13 @@ date: 2024-12-25T13:56:20+08:00
 author: LiangMingJian
 ---
 
-# BUG 描述
+# BUG
 
-在 Linux 编译某些软件时，会出现报错：`fatal error: openssl/ssl.h: No such file or directory centos`。
+在 Linux 编译某些软件时，会出现报错：
+
+```bash
+fatal error: openssl/ssl.h: No such file or directory centos
+```
 
 # Resolution
 

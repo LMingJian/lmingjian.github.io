@@ -4,45 +4,58 @@ date: 2024-12-25T13:55:53+08:00
 author: LiangMingJian
 ---
 
-# 实现
+# 需求
 
-在 Linux 中，你可以使用`command -v`来检查特定命令是否存在，在 Bash 脚本中使用以下代码检查。
+在编写 Linux 运维脚本时，有时候会碰见这样的情况——需要使用一些特殊的命令来执行操作，这些特殊的命令有概率不被安装在目标系统上，需要用户手动安装。
+
+此时，如果在 Shell 脚本中检查该特殊命令是否存在就成了一个问题。
+
+# 通过 command 命令来实现
+
+在 Linux 中，command 是一个用于确定给定命令类型和位置的命令，其使用手册如下：
+
+```shell
+command [-pVv] target_command [arg ...]
+# -p: 使用一个安全的路径来执行命令，忽略用户定义的路径变量（command -p ls -l）
+# -V：打印详细的命令描述，V 是 Verbose 详细的意思（command -V ls）
+# -v：同样是打印命令描述，但展示较少数据（command -v ls）
+```
+
+显然，通过检查 `command -v target_command` 的退出状态码便可以实现检查命令是否存在的需求（**当命令不存在时，command 的状态码会返回非 0，反之返回 0**）。
+
+在 Shell 脚本中，可以使用以下代码：
 
 ```bash
-if ! command -v <the_command> &> /dev/null
+if ! command -v unzip &> /dev/null
 then
-    echo "<the_command> could not be found"
+    echo "unzip could not be found"
     exit
 fi
+# command -v unzip 返回命令的描述，用来判断命令是否存在
+# &> /dev/null 将标准输出和标准错误都重定向到空设备，不显示任何输出
+# ! 将结果取反，用来打印结果
 ```
 
-在一些特别的环境中，还可以使用`hash`，`type`来进行检查。
+另外，还可以尝试使用 `hash`，`type` 来实现检查操作，这些命令也是有效的。
 
 ```bash
-hash <the_command> # For regular commands. Or...
-type <the_command> # To check built-ins and keywords
+hash unzip
+# hash 是用于管理命令路径缓存一个工具
+# 通过 hash target_command，可以将已有命令写入缓存
+# 但如果是没有的命令，则会报错 -bash: hash: unzip: not found
+
+type unzip
+# type 是用来显示指定命令类型的工具
+# 通过 type target_command，可以显示已有命令的类型
+# 但如果是没有的命令，则会报错 -bash: type: unzip: not found
 ```
 
-另外，请避免使用`which`。在许多操作系统中`which`不会设置退出状态，其不会返回值。意味着如果`if which foo`不会返回`foo`不存在，总会报告`foo`存在。此外，`which`还会将输出更改或将结果挂载在包管理器中。因此请尽量避免使用`which`，请改用以下方法将结果输出到空`2>/dev/null`，以避免程序出错。
+最后，请尽量避免使用 `which` 命令（用于返回目标命令在环境变量中的绝对路径）。
 
-```bash
-$ command -v foo >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
-$ type foo >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
-$ hash foo 2>/dev/null || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
-```
+虽然通过 `which` 命令也能检查到命令是否存在。但是在一些操作系统中，**`which` 命令不会设置退出状态，因此其不会有返回值**。
 
-一个简单的函数示例如下，如果命令存在则运行，否则返回 `gdate date`
+这就意味着，如果用户在 Shell 脚本中编写 `if which unzip`，那么脚本将不会返回命令不存在，而是会报告命令存在。
 
-```bash
-gnudate() {
-    if hash gdate 2>/dev/null; then
-        gdate "$@"
-    else
-        date "$@"
-    fi
-}
-```
+——————————
 
-{{< details "参考文件" >}} 
-1：[ check if a program exists from a Bash script? @Stack Overflow ](https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script)
-{{< /details >}}
+> [ check if a program exists from a Bash script? @Stack Overflow ](https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script)

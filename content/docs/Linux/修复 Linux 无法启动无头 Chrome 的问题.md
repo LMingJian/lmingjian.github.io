@@ -4,9 +4,13 @@ date: 2024-12-25T13:56:31+08:00
 author: LiangMingJian
 ---
 
-# BUG 描述
+# BUG
 
-linux 系统下， Python 脚本无法使用 selenium 启动 Chrome，报错：`unknown error: DevToolsActivePort file doesn't exist`。
+Linux 系统下，Python 脚本无法使用 Selenium 启动无头的 Chrome 浏览器，并报错：
+
+```bash
+unknown error: DevToolsActivePort file doesn't exist
+```
 
 # Resolution
 

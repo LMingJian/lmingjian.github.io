@@ -6,20 +6,21 @@ author: LiangMingJian
 
 # 使用 GPT 分区挂载
 
-大数据盘的分区和文件系统格式化和小盘都存在差异。大盘必须采用 GPT 分区格式， 不能再采用小盘使用的 MBR 分区格式。**（无论大小盘，建议都使用 GPT 分区）**
+在 Linux 中挂载硬盘时，大于 2 TB 的硬盘必须采用 GPT 分区进行格式化，不能采用 MBR 分区格式。因此无论是大小盘，都建议直接使用 GPT 分区。
 
 - MBR 分区格式：最大支持 2 TB 的磁盘。 
 - GPT 分区格式：最大支持 18 EB。
 
-## 1.检查磁盘信息
+## 检查磁盘信息
 
 - 使用 SSH 或 VNC 方式登录主机
 - 执行`fdisk -l`，查看磁盘是否存在，以及磁盘目录
 
 ![](/_images/drawingbed/img/202412051038927.png)
 
-## 2.磁盘分区
+## 磁盘分区（可选）
 
+- **如果磁盘没有初始化则需要进行以下步骤**
 - 输入`parted /dev/sdc`，进入 parted 分区工具，对磁盘进行分区
 - 创建磁盘标签 ( parted )： `mklabel`，设置标签格式为 `GPT`
 - 查看分区状态 ( parted )：`p`
@@ -32,13 +33,14 @@ author: LiangMingJian
 
 ![](/_images/drawingbed/img/202412051042869.png)
 
-## 3.EXT4 系统格式化
+## EXT4 系统格式化（可选）
 
+- **如果磁盘没有初始化则需要进行以下步骤**
 - 输入`mkfs.ext4 -T largefile /dev/sdc1`，对设备 /dev/sdc1 进行格式化
 
 ![](/_images/drawingbed/img/202412051043794.png)
 
-## 4.挂载目录
+## 挂载目录
 
 - 使用`cd /`进入根目录，创建目录地址`mkdir test`
 - 输入`mount -t ext4 /dev/sdc1 /test`。挂载目录到 test 文件夹下
@@ -49,7 +51,7 @@ author: LiangMingJian
 
 ![](/_images/drawingbed/img/202412051052085.png)
 
-## 5.自动挂载
+## 自动挂载
 
 使用 mount 操作只能将硬盘临时挂载，重启主机之后，挂载信息就会丢失，为了保证挂载信息长期有效，需要对 fstab 文件进行配置。
 
@@ -64,7 +66,6 @@ author: LiangMingJian
 
 ![](/_images/drawingbed/img/202412051055967.png)
 
-{{< details "参考文件" >}} 
-1：[  初始化云硬盘 @移动云 ](https://ecloud.10086.cn/op-help-center/doc/article/48750)
-{{< /details >}}
+——————————
 
+> [  初始化云硬盘 @移动云 ](https://ecloud.10086.cn/op-help-center/doc/article/48750)
