@@ -29,7 +29,7 @@ ln [参数] [源文件或目录] [目标文件或目录]
 
 # 示例
 
-```
-ln -s log2013.log link2013 
+```shell
 # 将 log2013.log 链接到 link2013，输入 link2013 可访问 log2013.log
+ln -s log2013.log link2013 
 ```

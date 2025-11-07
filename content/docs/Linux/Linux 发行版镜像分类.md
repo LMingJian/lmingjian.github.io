@@ -6,7 +6,7 @@ author: LiangMingJian
 
 # 概述
 
-以下内容以 CentOS-7.0-x86_64 为例
+以下内容以 CentOS-7.0-x86_64 为例。
 
 # 版本分类
 

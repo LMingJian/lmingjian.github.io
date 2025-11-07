@@ -38,8 +38,14 @@ NUMA node0 CPU(s):     0-7,16-23
 NUMA node1 CPU(s):     8-15,24-31
 ```
 
-其中 Socket 就是主板上插 CPU 的槽的数量；Core 就是平时说的核，双核、四核等，就是每个 CPU 上的核数；Thread 就是每个 Core 上的硬件线程数，即超线程；对操作系统来说，其逻辑 CPU 的数量就是 SocketCoreThread。
+其中：
 
-{{< details "参考文件" >}} 
-1：[ lscpu 中 socket、core、thread 的意义 @Whosemario ](http://whosemario.github.io/2016/05/20/lscpu-cmd)
-{{< /details >}}
+- Socket 就是主板上插 CPU 的槽的数量
+- Core 就是平时说的核，双核、四核等，就是每个 CPU 上的核数
+- Thread 就是每个 Core 上的硬件线程数，即超线程
+
+对操作系统来说，其逻辑 CPU 的数量等于 Socket \* Core \* Thread。
+
+——————
+
+> [ lscpu 中 socket、core、thread 的意义 @Whosemario ](http://whosemario.github.io/2016/05/20/lscpu-cmd)

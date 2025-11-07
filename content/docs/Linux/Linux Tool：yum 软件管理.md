@@ -1,29 +1,32 @@
 ---
-title: Linux Tool：yum
+title: Linux Tool：yum 软件管理
 date: 2024-12-25T13:59:26+08:00
 author: LiangMingJian
 ---
 
 # 概述
 
-yum（ Yellow dog Updater, Modified ）是一个在 Fedora 和 RedHat 以及 SUSE 中的 Shell 前端软件包管理器。yum 提供了查找、安装、删除某一个、一组甚至全部软件包的命令。
+yum（ Yellow dog Updater, Modified ）是一个在 Fedora 和 RedHat 以及 SUSE 中的 Shell 前端软件包管理器。
+
+yum 提供了查找、安装、删除某一个、一组甚至全部软件包的命令。
 
 # 安装
 
 ```bash
-# 新建一个目录用来保存yum安装包 
+# 新建一个目录用来保存 yum 安装包 
 mkdir install
 # 进入文件夹并输入命令
 cd install
 wget http://yum.baseurl.org/download/3.2/yum-3.2.28.tar.gz
 # 解压
 tar -xvf yum-3.2.28.tar.gz
-# 重点：解压后先不着急安装，手动创建一个yum的conf文件，不然会报找不到文件的错 yum.cli:Config Error: Error accessing file for config file:///etc/
-# touch /etc/yum.conf
-# 进入yum目录，脚本安装
+# 重点：解压后先不着急安装，手动创建一个 yum 的 conf 文件，不然会报找不到文件的错。
+# 报错：yum.cli:Config Error: Error accessing file for config file:///etc/
+touch /etc/yum.conf
+# 进入 yum 目录，脚本安装
 cd yum-3.2.28
 ./yummain.py install yum
-# 期间会提示安装新版本，y回车即可
+# 期间会提示安装新版本，y 回车即可
 ```
 
 # 使用
@@ -35,9 +38,9 @@ yum -y install xxxxx   #安装
 
 # Ex.镜像切换
 
-由于 CentOS7 停止维护，Yum 镜像无法使用，因此需要设置镜像源来提高软件包安装和更新的速度。
+自 2024 年 7 月 1 日开始，由于 CentOS 7 停止维护，yum 镜像无法使用，因此需要设置镜像源来提高软件包安装和更新的速度。
 
-首先备份你当前的 YUM 仓库配置。
+首先备份你当前的 yum 仓库配置。
 
 ```sh
 sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
@@ -81,7 +84,7 @@ enabled=0
 gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
 ```
 
-最后保存文件并退出编辑器，清除 YUM 缓存并重新生成缓存，现在你可以使用 YUM 进行软件包的安装和更新了。
+最后保存文件并退出编辑器，清除 yum 缓存并重新生成缓存，现在你可以使用 yum 进行软件包的安装和更新了。
 
 ```shell
 sudo yum clean all

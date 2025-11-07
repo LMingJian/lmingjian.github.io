@@ -48,7 +48,7 @@ author: LiangMingJian
 | Ctrl + C   |  中断当前命令 |
 | Ctrl + D   |  退出当前 Shell（相当于exit） |
 
-## Vi 或 Vim 快捷键
+## vi 或 vim 快捷键
 
 | 快捷键     |  功能   |
 | --- | --- |

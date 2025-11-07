@@ -8,7 +8,7 @@ author: LiangMingJian
 
 tail 命令可用于查看文件的内容（默认查看最新的 10 行内容），携带参数 -f 时，常用于查阅正在改变的日志文件。
 
-tail -f filename 会把 filename 文件里的最尾部的内容显示在屏幕上，并且不断刷新，只要 filename 更新就可以看到最新的文件内容。
+`tail -f filename` 会把 filename 文件里的最尾部的内容显示在屏幕上，并且不断刷新，只要 filename 更新就可以看到最新的文件内容。
 
 ```
 tail [参数] [文件]
