@@ -6,7 +6,7 @@ author: LiangMingJian
 
 # 概述
 
-Zabbix Agent 部署在被监控目标上，以主动监控本地资源和应用程序（硬盘、内存、处理器统计信息等）。
+**Zabbix Agent 部署在被监控目标上，以主动监控本地资源和应用程序（硬盘、内存、处理器统计信息等）。**
 
 Zabbix Agent 收集本地的操作信息并将数据报告给 Zabbix Server 用于进一步处理。一旦出现异常 (例如硬盘空间已满或者有崩溃的服务进程)，Zabbix Server 会主动警告管理员指定机器上的异常。
 

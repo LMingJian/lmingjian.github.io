@@ -1,5 +1,5 @@
 ---
-title: Linux Windows 终端 base cmd powsershell 多行命令的输入方式
+title: Linux 和 Windows 终端多行命令的输入方式
 date: 2025-10-11T14:07:44+08:00
 author: LiangMingJian
 ---

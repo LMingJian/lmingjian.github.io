@@ -4,9 +4,7 @@ date: 2024-12-25T16:17:47+08:00
 author: LiangMingJian
 ---
 
-# Zabbix 的监控模式
-
-## 被动模式
+# 被动模式
 
 **被动模式是 Zabbix 默认使用的监控模式**
 
@@ -14,7 +12,7 @@ author: LiangMingJian
 
 这种模式被称为被动监控，其特点是由服务器轮询监控主机，获取数据。
 
-## 主动模式
+# 主动模式
 
 在主动模式中，由 Agent 向 Zabbix Server 发起连接，向服务器请求需要检测的监控项目列表，然后由 Zabbix Server 响应并向 Agent 发送一个 Items 列表，Agent 在收到监控列表后开始周期性地收集数据，并发送给 Zabbix Server。
 

@@ -12,10 +12,10 @@ author: LiangMingJian
 
 # 解决
 
-1.输入`Win + R` 打开运行。
+1.输入 `Win + R` 打开运行。
 
 2.输入 `regedit` 打开注册表编辑器。
 
-3.定位到`计算机\HKEY_CLASSES_ROOT\Directory\Background\shell`。
+3.定位到 `计算机\HKEY_CLASSES_ROOT\Directory\Background\shell`。
 
-4.修改或删除目标内容
+4.修改或删除目标内容。

@@ -12,10 +12,15 @@ author: LiangMingJian
 
 # 解决
 
-1.按下`Win + R` 打开运行。
+1.按下 `Win + R` 打开运行。
 
 2.输入 `regedit` 打开注册表编辑器。
 
-3.在注册表中定位到`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall`。
+3.在注册表中定位到：
+
+```
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node
+\Microsoft\Windows\CurrentVersion\Uninstall
+```
 
 4.修改或删除对应的目标内容。
