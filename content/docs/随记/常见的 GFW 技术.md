@@ -8,7 +8,9 @@ author: LiangMingJian
 
 这是最容易绕过，也常常是最先被应用的干扰.。
 
-DNS 可以使用 UDP 或是 TCP 来传输，但由于 DNS 数据量通常非常小，因此出于降低延迟的考虑，各种操作系统中的 DNS 都默认使用 UDP 连接。UDP 不基于连接的特性极大地便利了中间人给数据动手脚，因此在查询一些网站的 IP 时，防火墙会返回错误的 IP 地址。比如查询 Reddit 的 IP 地址时：
+DNS 可以使用 UDP 或是 TCP 来传输，但由于 DNS 数据量通常非常小，因此出于降低延迟的考虑，各种操作系统中的 DNS 都默认使用 UDP 连接。
+
+UDP 不基于连接的特性极大地便利了中间人给数据动手脚，因此在查询一些网站的 IP 时，防火墙会返回错误的 IP 地址。比如查询 Reddit 的 IP 地址时：
 
 ```
 drill www.reddit.com @8.8.8.8
@@ -63,6 +65,6 @@ RST 攻击是 GFW 最常见也是运用最广泛的屏蔽手段之一，因此�
 
 对抗 IP 黑洞没有什么好办法，只有使用代理。对于 Google 或是 Facebook 这样拥有巨量 IP 的公司，常常能找到尚未被屏蔽的地址，但这样只能短暂地解决问题，更不用说该手段常常结合其他手段使用。
 
-{{< details "参考文件" >}} 
-1：[ 墙, 墙和更高的墙 @shockwave ](https://shockwave.me/ad581b6cdfe0/)
-{{< /details >}}
+————————————
+
+> [ 墙, 墙和更高的墙 @shockwave ](https://shockwave.me/ad581b6cdfe0/)
