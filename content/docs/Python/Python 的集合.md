@@ -178,7 +178,7 @@ print(s1.isdisjoint(s2))
 
 在 Python 中，通过方法 `difference()` 和 `difference_update()` 实现差集运算，区别在于在于 difference 会返回一个新的集合，而 difference_update 会在原集合上修改。
 
-![](_images/drawingbed/img/ScreenShot_2025-09-29_163757_089.png)
+![](_images/drawingbed/img/Pasted%20image%2020250929163757.png)
 
 ```python
 s1 = {1, 2, 3, 4}  
