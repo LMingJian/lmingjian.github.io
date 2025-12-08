@@ -6,8 +6,8 @@ author: LiangMingJian
 
 # 使用在线网站
 
-使用在线字体编辑类网站，如[ https://font.qqe2.com/index.html ](https://font.qqe2.com/index.html)，在线打开 Iconfont 文件，查看字体代码。
+使用在线字体编辑类网站，如下述地址，在线打开 Iconfont 文件，查看字体代码。
 
-{{< details "参考文件" >}} 
-1：[ 怎么查看 Iconfont 字体有哪些图标和编码 @编程学习网 ](http://www.topstudy.com.cn/nav/web/83553.html)
-{{< /details >}}
+[ FontStore ](https://font.qqe2.com/index.html)
+
+![](_images/drawingbed/img/Pasted%20image%2020251208103303.png)

@@ -76,6 +76,6 @@ VLAN Trunk（虚拟局域网中继技术）是指能让连接在不同交换机�
 
 ![](/_images/drawingbed/img/202505111129997.png)
 
-{{< details "参考文件" >}} 
-1：[ 单线复用! 一根线完美解决ITV+千兆网复用问题 - 知乎 ](https://zhuanlan.zhihu.com/p/150818318)
-{{< /details >}}
+————————————
+
+> [ 单线复用! 一根线完美解决ITV+千兆网复用问题 - 知乎 ](https://zhuanlan.zhihu.com/p/150818318)
