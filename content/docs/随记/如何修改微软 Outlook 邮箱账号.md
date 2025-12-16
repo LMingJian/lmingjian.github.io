@@ -32,6 +32,6 @@ author: LiangMingJian
 
 添加成功后，此时 outlook 账号就会变更为所设置内容。
 
-{{< details "参考文件" >}} 
-1：[ 微软@outlook账户名创建/修改 @知乎 ](https://zhuanlan.zhihu.com/p/406811781)
-{{< /details >}}
+————————————
+
+> [ 微软@outlook账户名创建/修改 @知乎 ](https://zhuanlan.zhihu.com/p/406811781)

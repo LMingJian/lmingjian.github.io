@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1fc97caad0e81351",
+        "id": "49e4b07949ed91cb",
         "type": "tabs",
         "children": [
           {
-            "id": "b559f84d741806ce",
+            "id": "497d39f31ea9d09e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -63,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 327.5
   },
   "right": {
     "id": "f64e95174151e265",
@@ -96,6 +96,42 @@
       "canvas:新建白板": false
     }
   },
-  "active": "b559f84d741806ce",
-  "lastOpenFiles": []
+  "active": "dbf27dbd6fdcdecd",
+  "lastOpenFiles": [
+    "随记/什么是 Shell？什么是 Bash？.md",
+    "随记/什么是 CORS.md",
+    "_images/drawingbed/img/Pasted image 20251216164410.png",
+    "_images/drawingbed/img/Pasted image 20251216164405.png",
+    "随记/什么是 SNI 审查.md",
+    "随记/什么是 Socket.IO.md",
+    "随记/如何在网页上截长图.md",
+    "随记/什么是 CSRF.md",
+    "随记/MSVC cl 命令无法找到与 kernel32 丢失问题.md",
+    "随记/Windows Rust 安装手册.md",
+    "_images/drawingbed/img/Pasted image 20251215104039.png",
+    "_images/drawingbed/img/Pasted image 20251215142927.png",
+    "_images/drawingbed/img/Pasted image 20251215142650.png",
+    "_images/drawingbed/img/Pasted image 20251215142435.png",
+    "_images/drawingbed/img/Pasted image 20251215141844.png",
+    "_images/drawingbed/img/Pasted image 20251215141738.png",
+    "_images/drawingbed/img/Pasted image 20251215141344.png",
+    "_images/drawingbed/img/Pasted image 20251215135150.png",
+    "随记/如何在 yaml 文件中进行引用.md",
+    "随记/如何在 X86 Windows 上虚拟 ARM 服务器.md",
+    "随记/如何在 NAT 模式下访问 VirtualBox 虚拟机.md",
+    "随记/如何用 Grafana + Prometheus 搭建性能监控系统.md",
+    "随记/如何用 nslookup 进行 DNS 跟踪.md",
+    "随记/如何用 Grafana + Loki 搭建日志监控系统.md",
+    "Linux/Linux 防火墙 firewall-cmd 操作指南.md",
+    "Docker/如何修改 Docker 的镜像源.md",
+    "Docker/如何管理 Docker 镜像.md",
+    "Docker/如何导出 Docker 镜像.md",
+    "随记/如何给 Hugo 博客添加搜索功能.md",
+    "随记/如何修改微软 Outlook 邮箱账号.md",
+    "随记/如何通过 EasyDarwin 模拟摄像头 RTSP 流.md",
+    "随记/如何使用语音识别工具 Whisper.md",
+    "随记/如何提高网络的吞吐量.md",
+    "随记/().md",
+    "随记/如何关闭 Chrome 的系统升级横幅.md"
+  ]
 }

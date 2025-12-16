@@ -38,6 +38,6 @@ author: LiangMingJian
 
 ![](/_images/drawingbed/img/202401031036466.png)
 
-{{< details "参考文件" >}} 
-1：[ 视频文件+EasyDarwin 模拟 RTSP 流 ](https://blog.csdn.net/xiejiashu/article/details/134633513)
-{{< /details >}}
+————————————
+
+> [ 视频文件+EasyDarwin 模拟 RTSP 流 ](https://blog.csdn.net/xiejiashu/article/details/134633513)
