@@ -26,6 +26,8 @@ Whisper 目前主要推出了 tiny、base、small、medium、larg 这几类大�
 
 各种模型的下载地址位于：[ Whisper init ](https://github.com/openai/whisper/blob/main/whisper/__init__.py)
 
+模型一般存放于路径：`C:\Users\{UserName}\.cache\whisper\`
+
 ![](_images/drawingbed/img/Pasted%20image%2020251208155123.png)
 
 # Whisper 的安装使用
