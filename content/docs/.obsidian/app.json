@@ -13,5 +13,6 @@
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
   "newLinkFormat": "absolute",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "spellcheck": false
 }

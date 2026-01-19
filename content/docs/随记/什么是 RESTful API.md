@@ -4,124 +4,99 @@ date: 2024-12-25T10:33:45+08:00
 author: LiangMingJian
 ---
 
-# API 接口的产生
+# 概述
 
-网络应用程序，分为前端和后端两个部分。当前的发展趋势，就是前端设备层出不穷（手机、平板、桌面电脑、其他专用设备......）。因此，必须有一种统一的机制，方便不同的前端设备与后端进行通信。这导致API构架的流行，甚至出现 API First 的设计思想。RESTful API 是目前比较成熟的一套互联网应用程序的API设计理论。
+RESTful API 是一种基于 HTTP 协议的 API 设计风格，它只是一种**协议规范**。
 
-# API 应部署在域名下
+RESTful API 通过统一的接口和资源操作规范，让不同的前端设备与后端服务器之间的交互更为简单、一致、以及可预测。
 
-应该尽量将API部署在专用域名之下。
+简单来说，RESTful API 就像一套通用的“语言规则”，让前端设备和后端服务器能高效进行沟通。
+
+# RESTful API 设计原则
+
+## 1.资源标识（API 的路由）
+
+路由是指 API 的具体网址，即常说的 URL。
+
+在 RESTful API 架构中，每一个 URL 代表一种资源，为此，URL 的命名应当使用名词复数，避免使用动词。
+
+比如下述动物园的接口设计，应当使用 `/zoos, /animals, /employees` 来表示动物园列表，动物列表，员工列表，而不是使用 `/get_zoos, /get_animals, /get_employees` 等动词。
+
+## 2.资源操作（HTTP 动词）
+
+正如 1 所介绍，使用名词复数来表示资源，那么对资源的操作，增删查改，则使用 HTTP 动词来实现。
+
+标准的 HTTP 动词有以下 7 个：
+
+- GET：从服务器**获取资源**。
+- POST：在服务器**新建资源**。
+- PUT：在服务器**全量更新资源**。
+- PATCH：在服务器**部分更新资源**。
+- DELETE：从服务器**删除资源**。
+- HEAD：从服务器**获取资源的元数据**。
+- OPTIONS：从服务器**获取资源的可用信息**。
+
+## 3.返回结果（HTTP 状态码)
+
+服务器应当使用统一格式返回资源操作结果，并按 HTTP 协议标准返回对应的 HTTP 状态码。
+
+在 RESTful API 架构中，一般建议使用 JSON 结构返回资源操作结果，一个简单的示例如下：
+
+```json
+{
+  "code": 200,
+  "message": "Success",
+  "data": {
+    "id": 1,
+    "name": "Zoos",
+    "email": "zoos@example.com"
+  },
+  "requestId": "111111111111"
+}
+```
+
+其中 `code` 表示状态码，`message` 表示提示，`dada` 是返回的数据，`requestId` 是请求的标识。
+
+HTTP 状态码建议参照文章：[ 什么是 HTTP 响应状态码 ](https://zhuanlan.zhihu.com/p/1991529870262548430)
+
+# 其他的一些规范
+
+## 1.信息应当支持过滤
+
+如果服务器返回的资源数量很多，则 API 应该提供参数，过滤返回结果。
+
+比如使用以下列表参数，限定返回资源数量。
+
+|名称     | 功能    |
+| --- | --- |
+|  ?limit=10   |  限定返回的资源数量   |
+|  ?offset=10   |  从给定的位置开始返回数据   |
+|  ?page=2&per_page=100   | 按分页大小给定返回的第几页数据    |
+|  ?sortby=name&order=asc   |  按指定排序规则进行返回   |
+|  ?type_id=1  | 按特定规则返回数据    |
+
+## 2.API 应部署在专属域名下
+
+应当尽量将 API 部署在专属域名之下，与静态资源服务器隔离。
 
 ```
 https://api.example.com
 ```
 
-如果确定API很简单，不会有进一步扩展，可以考虑放在主域名下。
+当然，如果没有专属域名，也可以考虑在主域名下通过路由进行隔离。
 
 ```
 https://example.org/api/
 ```
 
-# API 版本应放在 URL 中
+## 3.API 版本应放在 URL 中
 
-应该将API的版本号放入URL。
+应该将 API 的版本号放入 URL，进行标识。
 
 ```
 https://api.example.com/v1/
 ```
 
-另一种做法是，将版本号放在HTTP头信息中，但不如放入URL方便和直观。Github 采用这种做法。
+————————————
 
-# API 的路径
-
-路径又称"终点"（endpoint），表示API的具体网址。
-
-在RESTful架构中，每个网址代表一种资源（resource），所以网址中不能有动词，只能有名词，而且所用的名词往往与数据库的表格名对应。一般来说，数据库中的表都是同种记录的"集合"（collection），所以API中的名词也应该使用复数。
-
-举例来说，有一个API提供动物园（zoo）的信息，还包括各种动物和雇员的信息，则它的路径应该设计成下面这样。
-
-- https://api.example.com/v1/zoos
-- https://api.example.com/v1/animals
-- https://api.example.com/v1/employees
-
-# HTTP 动词-资源请求
-
-常用的HTTP动词有下面五个（括号里是对应的SQL命令）。
-
-- GET（SELECT）：从服务器取出资源（一项或多项）。
-- POST（CREATE）：在服务器新建一个资源。
-- PUT（UPDATE）：在服务器更新资源（客户端提供改变后的完整资源）。
-- PATCH（UPDATE）：在服务器更新资源（客户端提供改变的属性）。
-- DELETE（DELETE）：从服务器删除资源。
-
-还有两个不常用的HTTP动词。
-
-- HEAD：获取资源的元数据。
-- OPTIONS：获取信息，关于资源的哪些属性是客户端可以改变的。
-
-下面是一些例子。
-
-- GET /zoos：列出所有动物园
-- POST /zoos：新建一个动物园
-- GET /zoos/ID：获取某个指定动物园的信息
-- PUT /zoos/ID：更新某个指定动物园的信息（提供该动物园的全部信息）
-- PATCH /zoos/ID：更新某个指定动物园的信息（提供该动物园的部分信息）
-- DELETE /zoos/ID：删除某个动物园
-- GET /zoos/ID/animals：列出某个指定动物园的所有动物
-- DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
-
-# 过滤信息（Filtering）
-
-如果记录数量很多，服务器不可能都将它们返回给用户。API应该提供参数，过滤返回结果。
-
-下面是一些常见的参数。
-
-- ?limit=10：指定返回记录的数量
-- ?offset=10：指定返回记录的开始位置。
-- ?page=2&per_page=100：指定第几页，以及每页的记录数。
-- ?sortby=name&order=asc：指定返回结果按照哪个属性排序，以及排序顺序。
-- ?animal_type_id=1：指定筛选条件
-
-参数的设计允许存在冗余，即允许API路径和URL参数偶尔有重复。比如，GET /zoo/ID/animals 与 GET /animals?zoo_id=ID 的含义是相同的。
-
-# 状态码（Status Codes）
-
-服务器向用户返回的状态码和提示信息，常见的有以下一些（方括号中是该状态码对应的HTTP动词）。
-
-- 200 OK - [GET]：服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）。
-- 201 CREATED - [POST/PUT/PATCH]：用户新建或修改数据成功。
-- 202 Accepted - [*]：表示一个请求已经进入后台排队（异步任务）
-- 204 NO CONTENT - [DELETE]：用户删除数据成功。
-- 400 INVALID REQUEST - [POST/PUT/PATCH]：用户发出的请求有错误，服务器没有进行新建或修改数据的操作，该操作是幂等的。
-- 401 Unauthorized - [*]：表示用户没有权限（令牌、用户名、密码错误）。
-- 403 Forbidden - [*] 表示用户得到授权（与401错误相对），但是访问是被禁止的。
-- 404 NOT FOUND - [*]：用户发出的请求针对的是不存在的记录，服务器没有进行操作，该操作是幂等的。
-- 406 Not Acceptable - [GET]：用户请求的格式不可得（比如用户请求JSON格式，但是只有XML格式）。
-- 410 Gone -[GET]：用户请求的资源被永久删除，且不会再得到的。
-- 422 Unprocesable entity - [POST/PUT/PATCH] 当创建一个对象时，发生一个验证错误。
-- 500 INTERNAL SERVER ERROR - [*]：服务器发生错误，用户将无法判断发出的请求是否成功。
-
-# 错误处理（Error handling）
-
-如果状态码是4xx，就应该向用户返回出错信息。一般来说，返回的信息中将error作为键名，出错信息作为键值即可。
-
-```
-{
- error: "Invalid API key"
-}
-```
-
-# 返回结果
-
-针对不同操作，服务器向用户返回的结果应该符合以下规范。
-
-- GET /collection：返回资源对象的列表（数组）
-- GET /collection/resource：返回单个资源对象
-- POST /collection：返回新生成的资源对象
-- PUT /collection/resource：返回完整的资源对象
-- PATCH /collection/resource：返回完整的资源对象
-- DELETE /collection/resource：返回一个空文档
-
-{{< details "参考文件" >}} 
-1：[ RESTful API 设计指南  @阮一峰 ](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
-{{< /details >}}
+参考文件：[ RESTful API 设计指南  @阮一峰 ](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
