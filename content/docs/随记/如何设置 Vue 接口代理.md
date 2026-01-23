@@ -1,5 +1,5 @@
 ---
-title: Vue 接口代理设置
+title: 如何设置 Vue 接口代理
 date: 2025-06-27T16:14:06+08:00
 author: LiangMingJian
 ---

@@ -6,7 +6,9 @@ author: LiangMingJian
 
 # BUG 描述
 
-在游玩龙头 RPGMaker 制作的游戏时，无法使用方向键进行控制，启动游戏后会自动往左上跑，一直输出向上和向左信号。
+在游玩龙头 RPGMaker 制作的游戏时，突然出现无法使用方向键进行控制的问题。
+
+在启动游戏后，人物会自动的往左上跑，一直输出向上和向左的信号。
 
 # Resolution
 
@@ -14,6 +16,4 @@ author: LiangMingJian
 
 检查 Windows 设备管理器，在人机接口设备中查看是否存在 HID virtual device kit standard 等设备，寻找安装该设备的程序进行卸载。
 
-{{< details "参考文件" >}} 
-1：[ 龙头 rpg 方向失灵  @百度贴吧 ](https://tieba.baidu.com/p/7864541468)
-{{< /details >}}
+> 1：[ 龙头 rpg 方向失灵  @百度贴吧 ](https://tieba.baidu.com/p/7864541468)

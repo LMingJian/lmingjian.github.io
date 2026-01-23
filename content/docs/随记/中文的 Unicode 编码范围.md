@@ -4,7 +4,7 @@ date: 2024-12-25T10:37:04+08:00
 author: LiangMingJian
 ---
 
-# Unicode 编码范围
+# 中文的 Unicode 编码范围
 
 正则表达式中，可以通过 Unicode 编码来对一定范围内的中文字符进行匹配。
 
@@ -18,6 +18,6 @@ author: LiangMingJian
 - 2E80-9FFF：中日韩文字，包括绝大部分繁體中文
 - 4E00-9FFF：中文，部分繁体中文
 
-{{< details "参考文件" >}} 
-1：[ 正则表达式的汉字匹配 @易天 ](https://www.cnblogs.com/yitian/archive/2008/11/14/1333569.html)
-{{< /details >}}
+————————————
+
+> [ 正则表达式的汉字匹配 @易天 ](https://www.cnblogs.com/yitian/archive/2008/11/14/1333569.html)
