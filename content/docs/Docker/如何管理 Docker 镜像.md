@@ -37,6 +37,11 @@ docker tag 93109ce1d590 test/python-env:2.7.13
 
 在错误的为一个镜像添加多个标签时，可以通过 `rm` 命令删除多余镜像的标签
 
+在使用 Docker 时，有时会遇到 _image is referenced in multiple repositories_ 错误。这意味着同一个镜像被多个仓库引用，导致在尝试删除镜像时出现冲突。
+
 ```bash
+$ docker rmi 192.168.0.1/you/tom:1.0.8
+Untagged: 192.168.0.1/you/tom:1.0.8
 docker image rm nginx:1.16.0
+$ docker rmi -f f8ab12e03d53
 ```

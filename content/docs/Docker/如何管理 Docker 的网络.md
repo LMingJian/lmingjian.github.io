@@ -11,7 +11,6 @@ author: LiangMingJian
 ```bash
 docker network ls
 docker network inspect my_network # 查看网卡的配置
-docker inspect gateway  # 查看容器的配置
 ```
 
 # 清除不要的网络

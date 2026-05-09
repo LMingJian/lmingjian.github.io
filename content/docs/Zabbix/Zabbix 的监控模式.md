@@ -4,13 +4,17 @@ date: 2024-12-25T16:17:47+08:00
 author: LiangMingJian
 ---
 
-# 被动模式
+# 概述
 
-**被动模式是 Zabbix 默认使用的监控模式**
+Zabbix 的监控模式分为被动模式与主动模型，这两种监控模式决定了 Zabbix 获取数据的方法。
+
+# 被动模式
 
 在被动模式中，由 Zabbix Server 向 Agent 发起连接，并发送监控 Key，Agent 在收到请求后，响应监控数据。
 
-这种模式被称为被动监控，其特点是由服务器轮询监控主机，获取数据。
+被动监控的特点是由服务器轮询监控主机，获取数据。
+
+被动模式是 Zabbix 默认使用的监控模式。
 
 # 主动模式
 
@@ -18,8 +22,8 @@ author: LiangMingJian
 
 在主动模式中，Zabbix Server 不用每次需要数据时都连接 Agent，Agent 会自己收集并处理数据发送给 Zabbix Server，Zabbix Server 仅需要保存数据即可。
 
-这种模式被称为主动监控，其特点是由监控主机自己收集统计并发送给服务器，服务器不做轮询操作。
+主动监控的特点是由监控主机自己收集统计并发送给服务器，服务器不做轮询操作。
 
-{{< details "参考文件" >}} 
-1： [ Zabbix 使用手册 ](https://www.zabbix.com/documentation/current/zh/manual)
-{{< /details >}}
+——————————
+
+> 参考文档：[ Zabbix 使用手册 ](https://www.zabbix.com/documentation/current/zh/manual)
