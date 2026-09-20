@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ed54f2f36dfa49e8",
+        "id": "6126e64ecf08e1ea",
         "type": "tabs",
         "children": [
           {
-            "id": "f250c671e94978c9",
+            "id": "edecb99ea568b02d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -64,7 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 307.5
   },
   "right": {
     "id": "f64e95174151e265",
@@ -80,13 +80,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network/如何使用 Wireshark 进行网络抓包.md",
                 "followCursor": true,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "如何使用 Wireshark 进行网络抓包 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -103,48 +102,6 @@
       "canvas:新建白板": false
     }
   },
-  "active": "f250c671e94978c9",
-  "lastOpenFiles": [
-    "Android/华为设备如何通过进入生产模式开启 adb 无线调试.md",
-    "_images/drawingbed/img/bc5194f6d4e5c6d3c7b7d75433d34708.jpg.md",
-    "_index.md",
-    "_images/drawingbed/img/Pasted image 20260509093448.png",
-    "Android/修复 Android 访问双目摄像头时 ID 随机变动的问题.md",
-    "Android/修复 Android sdkmanager 无法识别的问题.md",
-    "Android/什么是 adb（Android 调试桥）.md",
-    "_images/drawingbed/img/Pasted image 20260508143902.png",
-    "Android/如何不通过 Android Studio 安装 Android SDK.md",
-    "随记/如何设置 Vue 接口代理.md",
-    "_images/drawingbed/img/Pasted image 20260508143259.png",
-    "_images/drawingbed/img/1bfaa1ce590c32316803abecd001da0c.jpg",
-    "_images/drawingbed/img/402bfb327c8f40a43b533e3a0db2eb83.jpg",
-    "_images/drawingbed/img/3fd07454ad4758ceda89f27b4fa7d603.jpg",
-    "_images/drawingbed/img/bc5194f6d4e5c6d3c7b7d75433d34708.jpg",
-    "Allure/Allure Report 的 Pytest 使用.md",
-    "Allure/Allure Report 的命令行使用.md",
-    "随记/测试用例的设计方法.md",
-    "随记/常见 CS 架构的用户认证方式.md",
-    "随记/常见的 GFW 技术.md",
-    "随记/二叉树的度和遍历方式.md",
-    "随记/如何安装 CUDA 并使用 PyTroch.md",
-    "随记/如何解决 flv.js 的延迟累积问题.md",
-    "随记/什么是 RESTful API.md",
-    "随记/AutoCAD 安装注意事项.md",
-    "随记/Google 软件测试之道 (1).md",
-    "随记/Google 软件测试之道 (3).md",
-    "随记/Linux 和 Windows 终端多行命令的输入方式.md",
-    "随记/MSVC cl 命令无法找到与 kernel32 丢失问题.md",
-    "随记/Windows Rust 安装手册.md",
-    "VSCode/如何修改 VSCode 底部状态栏的颜色.md",
-    "VSCode/如何在 VSCode 中运行 Django 项目.md",
-    "VSCode/修复 VSCode 终端禁止运行脚本的问题.md",
-    "_images/drawingbed/img/Pasted image 20260402100739.png",
-    "_images/drawingbed/img/202205050931735.png",
-    "_images/drawingbed/img/Pasted image 20260309192359.png",
-    "_images/drawingbed/LICENSE",
-    "_images/drawingbed/img",
-    "_images/vendor",
-    "_images/drawingbed",
-    "_images"
-  ]
+  "active": "dbf27dbd6fdcdecd",
+  "lastOpenFiles": []
 }

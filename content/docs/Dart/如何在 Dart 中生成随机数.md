@@ -6,7 +6,7 @@ author: LiangMingJian
 
 # 随机数
 
-在 dart 中，使用类 `Random()` 可以生成随机数。如下述代码所示。
+在 dart 中，使用类 `Random()` 可以生成随机数。
 
 ```dart
 import 'dart:math';

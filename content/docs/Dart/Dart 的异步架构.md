@@ -56,7 +56,7 @@ main() {
 
 在这个例子中，printDailyNewsDigest 调用 gatherNewsReports 并不会阻塞程序。gatherNewsReports 会把自己放入队列，返回一个 Future 让程序正常执行下去，在 gatherNewsReports 完成收集新闻过后程序再来进行打印。
 
-下面的图展示代码的执行流程。每一个数字对应着相应的步骤
+下面的图展示代码的执行流程。每一个数字对应着相应的步骤：
 
 ![](/_images/drawingbed/img/202204291909670.png)
 
@@ -69,7 +69,7 @@ main() {
 7. 当 printDailyNewsDigest 执行完成过后，最开始的 Future 返回完成，程序退出。
 8. PS：如果 async 函数没有明确指定返回值，返回的 null 值的 Future
 
-从上面的示例可以看出，async 和 await 在使用时具有以下的规则。
+从上面的示例可以看出，async 和 await 在使用时具有以下的规则：
 
 - await 必须在 async 方法中使用。
 - async 方法中在 await 前面的代码会立即同步执行，直到碰到 await。
@@ -103,6 +103,6 @@ main() async {
 }
 ```
 
-{{< details "参考文件" >}} 
-1：[ Dart异步编程-future  @方田 ](https://www.cnblogs.com/hygblog/p/9078608.html)
-{{< /details >}}
+——————————
+
+> [ Dart异步编程-future  @方田 ](https://www.cnblogs.com/hygblog/p/9078608.html)

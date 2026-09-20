@@ -14,6 +14,9 @@ author: LiangMingJian
 
 ```bash
 cd /etc/sysconfig/network-scripts/
+
+# 对于 Ubuntu
+cd /etc/netplan/
 ```
 
 在这个文件夹中，存在着 Linux 系统的网络配置文件。输入 `ls` 指令，我们可以看见这里有多个文件，每一个文件都是一个网卡的配置文件。
@@ -26,6 +29,9 @@ cd /etc/sysconfig/network-scripts/
 
 ```bash
 vi ifcfg-eth0
+
+# 对于 Ubuntu
+vi 50-cloud-init.yaml
 ```
 
 不过在实际运维时，不同的服务器网卡可能会有所不同，此时可以通过 `ip addr` 指令来查看当前使用的网卡名称。

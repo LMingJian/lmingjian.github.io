@@ -148,6 +148,6 @@ void main() async{
 }
 ```
 
-{{< details "参考文件" >}} 
-1：[ Dart 语言标准流与文件操作 @血色v残阳 ](https://blog.csdn.net/yingshukun/article/details/100866655)
-{{< /details >}}
+——————————
+
+> [ Dart 语言标准流与文件操作 @血色v残阳 ](https://blog.csdn.net/yingshukun/article/details/100866655)

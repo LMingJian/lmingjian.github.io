@@ -4,56 +4,65 @@ date: 2024-12-25T11:13:16+08:00
 author: LiangMingJian
 ---
 
-# 镜像的导出备份
+# 镜像的导出
 
-使用`save`命令可以将**镜像**打包成压缩文件。
-
-注意：如果使用使用镜像 ID 打包，那么当镜像在另一台服务器加载时镜像名字和 Tag 版本都会为 none，此时需要使用`docker tag`来重命名镜像
+使用 `save` 命令可以将**镜像**打包成压缩文件。
 
 ```bash
-docker save -o 镜像导出文件(格式为tar压缩文件) 镜像ID或镜像名称[:版本号]
-docker save -o $(pwd)/mytomcat.tar newtomcat:v1.0
-----------------------------------------------------------------------
-docker save 镜像 ID 或镜像名称[:版本号] > 镜像导出文件
-docker save newtomcat:v1.0 > $(pwd)/mytomcat.tar 
+# docker save 镜像名:标签 -o 导出文件.tar
+docker save my_images:v1.0 -o my_images_output.tar
 ```
 
-# 镜像的导入恢复
+> 注意：如果使用镜像 ID 打包，那么当镜像在另一台服务器加载时镜像名字和 Tag 版本都会为 none，此时需要使用 `docker tag` 来重命名镜像。
 
-使用`load`命令可以将文件导入回镜像库中。
+特别的，如果想要导入多个镜像，那么可以将多个镜像名一并写入然后导出。
 
 ```bash
-docker load -i 镜像导出文件(格式为tar压缩文件)
-docker load -i $(pwd)/mytomcat.tar
---------------------------------------------------------------------
-docker load < 镜像导出文件(格式为tar压缩文件)
-docker load < $(pwd)/mytomcat.tar
+docker save my_images_1:v1.0 my_images_2:v1.0 -o my_images_output.tar
 ```
 
-# 容器的导出备份
-
-使用`export`命令可以将正在运行的**容器**进行打包导出。
+最后，如果想一次性导出系统上所有的镜像，可以通过 `docker images` 命令查询，然后使用 `$()` 写入导出命令完成导出。
 
 ```bash
-docker export -o 容器导出文件 容器ID或容器名称
-docker export -o $(pwd)/newtomcat.tar mytomcat
------------------------------------------------------
-docker export 容器ID或容器名称 > 容器导出文件(格式为tar压缩文件) 
-docker export mytomcat > $(pwd)/newtomcat.tar 
------------------------------------------------------
-注释：
-$(pwd) 是 docker 支持的获取当前目录路径的方法，与 linux 的 pwd 类似
-$(pwd)/newtomcat.tar 表示在当前目录下生成一个 newtomcat.tar 压缩文件
+docker save $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -v "<none>") -o my_images_output.tar
 ```
 
-# 容器的导入恢复
+# 镜像的导入
 
-使用`import`命令可以将文件导入成新的镜像，后续可以从这个镜像重建容器。
+使用 `load` 命令可以将文件导入回镜像库中。
 
 ```bash
-docker import 容器导出文件(格式为tar压缩文件) 新镜像名称[:版本号]
-docker import $(pwd)/newtomcat.tar newtomcat:v1.0
-------------------------------------------------------
-docker import /URL 新镜像名称[:版本号]
-docker import http://example.com/exampleimage.tgz example/imagerepo
+# docker load -i 镜像导出文件.tar
+docker load -i my_images_output.tar
+```
+
+——————————————————————————————
+
+# 容器的导出
+
+除了上述镜像的导出外，Docker 还支持导出容器（当用户修改了容器内文件时，此时可以导出容器保存这些修改）。
+
+使用 `export` 命令，可以导出正在运行的容器。
+
+```bash
+# docker export 容器名 -o 导出文件.tar
+docker export my_container -o my_container_output.tar
+```
+
+# 容器的导入
+
+特别的，容器的导出文件不能被重新导入为一个容器，只能通过 `import` 命令导入为一个新的镜像，然后再重新运行为容器。
+
+```bash
+# docker import 导出文件.tar 镜像名:标签
+docker import my_container_output.tar new_images:v1.0
+```
+
+# 容器的提交 commit
+
+实际上，对容器的修改一般建议通过 `docker commit` 命令提交到镜像来进行保存，不建议通过导出容器来进行保存。
+
+```bash
+# docker commit -a 作者 -m 提交信息 容器名 镜像名:标签
+docker commit -a="my" -m="my commit" my_container my_images:v1.0
 ```
