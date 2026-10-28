@@ -1,5 +1,5 @@
 ---
-title: 一个AI PPT 制作 Agent 的提示词
+title: 一个 AI PPT 制作 Agent 的提示词
 date: 2026-07-30T15:34:11+08:00
 author: LiangMingJian
 ---

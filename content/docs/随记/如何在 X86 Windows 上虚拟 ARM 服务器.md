@@ -8,7 +8,7 @@ author: LiangMingJian
 
 - ARM 系统镜像（比如 UOS_aarch64）
 - QEMU（ [https://qemu.weilnetz.de](https://qemu.weilnetz.de/) ） 
-- UEFI 引导文件 QEMU_EFI.fd（ [http://releases.linaro.org/components/kernel/uefi-linaro](http://releases.linaro.org/components/kernel/uefi-linaro) ）
+- UEFI 引导文件 QEMU_EFI.fd（ ~~[http://releases.linaro.org/components/kernel/uefi-linaro](http://releases.linaro.org/components/kernel/uefi-linaro)~~ [https://github.com/hoobaa/qemu-aarc64](https://github.com/hoobaa/qemu-aarc64)）
 - TAP-Windows 虚拟网卡（ [https://tap-windows.updatestar.com](https://tap-windows.updatestar.com/) ）
 
 # 准备

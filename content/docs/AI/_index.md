@@ -2,7 +2,7 @@
 title: AI
 date: 2026-07-28T09:27:58+08:00
 author: LiangMingJian
-weight: 1
+weight: 3
 ---
 
 # AI
